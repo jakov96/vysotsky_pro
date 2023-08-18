@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header/>
+    <Description/>
     <Services/>
   </div>
 </template>
@@ -8,10 +9,11 @@
 <script>
 import Header from './components/Header'
 import Services from './components/Services'
+import Description from './components/Description'
 
 export default {
   name: 'App',
-  components: {Services, Header}
+  components: {Description, Services, Header}
 }
 </script>
 
