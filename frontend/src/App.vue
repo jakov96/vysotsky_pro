@@ -3,6 +3,8 @@
     <Header/>
     <Description/>
     <Services/>
+    <Prices/>
+    <RelatedPrices/>
   </div>
 </template>
 
@@ -10,10 +12,12 @@
 import Header from './components/Header'
 import Services from './components/Services'
 import Description from './components/Description'
+import RelatedPrices from './components/RelatedPrices'
+import Prices from './components/Prices'
 
 export default {
   name: 'App',
-  components: {Description, Services, Header}
+  components: {Prices, RelatedPrices, Description, Services, Header}
 }
 </script>
 

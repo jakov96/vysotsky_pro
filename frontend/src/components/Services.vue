@@ -21,15 +21,15 @@
         </div>
         <div class="item">
           <span class="icon develop"></span>
-          <span class="title">SEO - продвижение</span>
+          <span class="title">Разработка сайтов</span>
           <span>что входит в услугу:</span>
           <div class="description">
             <ul>
-              <li>анализ ниши и конкурентов</li>
-              <li>сбор семантического ядра</li>
-              <li>seo аудиты</li>
-              <li>оптимизация сайта</li>
-              <li>доработки конверсии сайта</li>
+              <li>подготовка структуры сайта</li>
+              <li>формирование прототипов сайта</li>
+              <li>разработка дизайна</li>
+              <li>программирование сайта</li>
+              <li>наполнение контентом</li>
               <li>настройка аналитики</li>
             </ul>
           </div>
@@ -37,14 +37,14 @@
         </div>
         <div class="item advertising">
           <span class="icon advertising"></span>
-          <span class="title">SEO - продвижение</span>
+          <span class="title">Настройка рекламы</span>
           <span>что входит в услугу:</span>
           <div class="description">
             <ul>
               <li>анализ ниши и конкурентов</li>
-              <li>сбор семантического ядра</li>
-              <li>seo аудиты</li>
-              <li>оптимизация сайта</li>
+              <li>подбор ключевых слов</li>
+              <li>запуск рекламной кампаний</li>
+              <li>корректировка кампании</li>
               <li>доработки конверсии сайта</li>
               <li>настройка аналитики</li>
             </ul>
@@ -102,6 +102,7 @@ export default {
       margin: 30px 0 15px 0
       font-size: 18px
       font-weight: 700
+      font-family: 'Unbounded', 'sans-serif'
       line-height: 24px
       color: #000
 
@@ -109,6 +110,7 @@ export default {
       margin-top: 30px
       font-size: 15px
       font-weight: 400
+      font-family: Golos, 'sans-serif'
 
       ul
         padding-left: 25px
