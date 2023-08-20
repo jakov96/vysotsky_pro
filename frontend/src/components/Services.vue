@@ -1,5 +1,5 @@
 <template>
-  <div class="section-1">
+  <section class="section-1">
     <div class="side-width">
       <div class="title-section">Какие услуги предоставляю</div>
       <div class="items">
@@ -53,7 +53,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
