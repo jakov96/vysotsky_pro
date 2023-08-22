@@ -6,6 +6,7 @@
     <Prices/>
     <RelatedPrices/>
     <PricesDetail/>
+    <WorkFormat/>
   </div>
 </template>
 
@@ -16,10 +17,11 @@ import Description from './components/Description'
 import RelatedPrices from './components/RelatedPrices'
 import Prices from './components/Prices'
 import PricesDetail from './components/PricesDetail'
+import WorkFormat from './components/WorkFormat'
 
 export default {
   name: 'App',
-  components: {PricesDetail, Prices, RelatedPrices, Description, Services, Header}
+  components: {WorkFormat, PricesDetail, Prices, RelatedPrices, Description, Services, Header}
 }
 </script>
 

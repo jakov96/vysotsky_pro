@@ -59,7 +59,7 @@ export default {
     line-height: 20px
 
   &__checklist
-    width: 55%
+    width: 50%
     display: flex
 
     ul
