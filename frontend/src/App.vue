@@ -8,6 +8,7 @@
     <PricesDetail/>
     <WorkFormat/>
     <About/>
+    <Footer/>
   </div>
 </template>
 
@@ -20,18 +21,20 @@ import Prices from './components/Prices'
 import PricesDetail from './components/PricesDetail'
 import WorkFormat from './components/WorkFormat'
 import About from './components/About'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
-  components: {About, WorkFormat, PricesDetail, Prices, RelatedPrices, Description, Services, Header}
+  components: {Footer, About, WorkFormat, PricesDetail, Prices, RelatedPrices, Description, Services, Header}
 }
 </script>
 
 <style lang="sass">
-@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap')
-
 @font-face
   font-family: 'Golos'
   src: local('Golos'), url("assets/fonts/Golos/Golos_Text.ttf") format("truetype")
 
+@font-face
+  font-family: 'Unbounded'
+  src: local('Unbounded'), url("assets/fonts/Unbounded/Unbounded.ttf") format("truetype")
 </style>
