@@ -118,7 +118,7 @@ export default {
       align-items: center
       padding-left: 40px
       font-size: 12px
-      font-weight: 600
+      font-weight: 500
       line-height: 16px
 
     ul > li:not(:first-child)

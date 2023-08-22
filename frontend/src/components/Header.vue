@@ -122,6 +122,7 @@ header
 
     &__left
       width: 48%
+
       .wrap
         &__title
           margin-bottom: 25px
@@ -191,7 +192,7 @@ header
           align-items: center
           padding-left: 40px
           font-size: 12px
-          font-weight: 600
+          font-weight: 500
           line-height: 16px
 
         ul > li:not(:first-child)
@@ -218,7 +219,7 @@ header
   .consultation
     display: flex
     flex-direction: column
-    margin-top: 130px
+    margin-top: 150px
 
     &__example
       display: flex
@@ -240,7 +241,7 @@ header
         background: url("../assets/images/download.png") no-repeat
 
     &__buttons
-      margin: 40px 0 25px
+      margin: 25px 0 25px
 
       .btn
         &.purple

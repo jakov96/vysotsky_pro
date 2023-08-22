@@ -7,6 +7,7 @@
     <RelatedPrices/>
     <PricesDetail/>
     <WorkFormat/>
+    <About/>
   </div>
 </template>
 
@@ -18,14 +19,19 @@ import RelatedPrices from './components/RelatedPrices'
 import Prices from './components/Prices'
 import PricesDetail from './components/PricesDetail'
 import WorkFormat from './components/WorkFormat'
+import About from './components/About'
 
 export default {
   name: 'App',
-  components: {WorkFormat, PricesDetail, Prices, RelatedPrices, Description, Services, Header}
+  components: {About, WorkFormat, PricesDetail, Prices, RelatedPrices, Description, Services, Header}
 }
 </script>
 
 <style lang="sass">
-@import url('https://fonts.googleapis.com/css2?family=Golos&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap')
+
+@font-face
+  font-family: 'Golos'
+  src: local('Golos'), url("assets/fonts/Golos/Golos_Text.ttf") format("truetype")
+
 </style>

@@ -74,7 +74,7 @@ export default {
       padding-left: 40px
       color: #000
       font-size: 12px
-      font-weight: 600
+      font-weight: 500
       line-height: 16px
       text-transform: uppercase
 

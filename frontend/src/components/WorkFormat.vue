@@ -4,7 +4,7 @@
       <div class="bounded">
         <div class="work-format">
           <div class="work-format__header">
-            <div class="work-format__title title-section">Формат работы</div>
+            <div class="title-section">Формат работы</div>
             <div class="work-format__info">Придерживаюсь порядка и прозрачности во всем. План работ и статусы по задачам
               доступны 24/7.
               По любой задаче можно написать вопрос или уточнение даже с мобильного телефона. <a class="link" href="#">Вот
@@ -41,18 +41,17 @@ export default {
 </script>
 
 <style lang="sass">
-.bounded
-  max-width: 1060px
-  margin-right: auto
-  margin-left: 0
-
 .work-format
   &__header
     display: flex
     justify-content: space-between
+    margin-bottom: 50px
 
   &__info
     width: 50%
+    font-size: 15px
+    font-weight: 400
+    line-height: 20px
 
   &__content
     display: flex

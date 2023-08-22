@@ -6,7 +6,7 @@
         <div class="item">
           <span class="icon promotion"></span>
           <span class="title">SEO - продвижение</span>
-          <span>что входит в услугу:</span>
+          <span class="more">что входит в услугу:</span>
           <div class="description">
             <ul>
               <li>анализ ниши и конкурентов</li>
@@ -22,7 +22,7 @@
         <div class="item">
           <span class="icon develop"></span>
           <span class="title">Разработка сайтов</span>
-          <span>что входит в услугу:</span>
+          <span class="more">что входит в услугу:</span>
           <div class="description">
             <ul>
               <li>подготовка структуры сайта</li>
@@ -38,7 +38,7 @@
         <div class="item advertising">
           <span class="icon advertising"></span>
           <span class="title">Настройка рекламы</span>
-          <span>что входит в услугу:</span>
+          <span class="more">что входит в услугу:</span>
           <div class="description">
             <ul>
               <li>анализ ниши и конкурентов</li>
@@ -105,6 +105,9 @@ export default {
       font-family: 'Unbounded', 'sans-serif'
       line-height: 24px
       color: #000
+
+    .more
+      font-weight: 500
 
     .description
       margin-top: 30px
