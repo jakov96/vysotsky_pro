@@ -9,6 +9,7 @@
     <WorkFormat/>
     <Results/>
     <ProblemExamples/>
+    <Who/>
     <About/>
     <Footer/>
   </div>
@@ -26,6 +27,7 @@ import About from './components/About'
 import Footer from './components/Footer'
 import Results from './components/Results'
 import ProblemExamples from './components/ProblemExamples'
+import Who from './components/Who'
 
 export default {
   name: 'App',
@@ -40,6 +42,7 @@ export default {
     RelatedPrices,
     Results,
     Services,
+    Who,
     WorkFormat
   }
 }
