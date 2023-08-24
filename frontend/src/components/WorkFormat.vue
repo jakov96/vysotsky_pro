@@ -83,5 +83,4 @@ export default {
     font-weight: 500
     line-height: 22px
     text-transform: uppercase
-
 </style>

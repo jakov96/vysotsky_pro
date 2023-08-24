@@ -8,6 +8,7 @@
     <PricesDetail/>
     <WorkFormat/>
     <Results/>
+    <ProblemExamples/>
     <About/>
     <Footer/>
   </div>
@@ -24,10 +25,23 @@ import WorkFormat from './components/WorkFormat'
 import About from './components/About'
 import Footer from './components/Footer'
 import Results from './components/Results'
+import ProblemExamples from './components/ProblemExamples'
 
 export default {
   name: 'App',
-  components: {Results, Footer, About, WorkFormat, PricesDetail, Prices, RelatedPrices, Description, Services, Header}
+  components: {
+    About,
+    Description,
+    Footer,
+    Header,
+    Prices,
+    PricesDetail,
+    ProblemExamples,
+    RelatedPrices,
+    Results,
+    Services,
+    WorkFormat
+  }
 }
 </script>
 

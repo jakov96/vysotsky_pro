@@ -22,3 +22,21 @@
     button
       background: rgba(230, 87, 101, 1)
 
+.slick-arrow
+  top: calc(100% + 40px) !important
+
+  &.slick-prev
+    left: 0 !important
+
+    &:hover, &:focus
+      opacity: 0.2
+      background: url('../assets/images/next-arrow.png') no-repeat center center !important
+      transform: rotate(180deg)
+
+  &.slick-next
+    left: 70px !important
+    top: calc(100% + 50px) !important
+
+    &:hover, &:focus
+      opacity: 0.2
+      background: url('../assets/images/next-arrow.png') no-repeat center center !important

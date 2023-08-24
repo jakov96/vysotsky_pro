@@ -69,10 +69,12 @@ export default {
 @import "../assets/sass/slick"
 
 .results
+  max-width: 1920px
+  margin: 0 auto
   display: flex
   flex-direction: column
   padding: 60px 0
-  background: linear-gradient(rgba(247, 245, 249, 1) 60%, #fff 40%)
+  background: linear-gradient(rgba(247, 245, 249, 1) 55%, #fff 45%)
 
   .title-section
     margin: 0 auto
