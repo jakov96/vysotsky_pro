@@ -11,6 +11,7 @@
     <ProblemExamples/>
     <Who/>
     <About/>
+    <Podcast/>
     <Footer/>
   </div>
 </template>
@@ -28,10 +29,12 @@ import Footer from './components/Footer'
 import Results from './components/Results'
 import ProblemExamples from './components/ProblemExamples'
 import Who from './components/Who'
+import Podcast from './components/Podcast'
 
 export default {
   name: 'App',
   components: {
+    Podcast,
     About,
     Description,
     Footer,
