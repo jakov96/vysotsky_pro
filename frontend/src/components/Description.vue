@@ -4,7 +4,7 @@
       <div class="title-section">Почему стоит обратиться ко мне</div>
       <div class="description">
         <div class="description__item">
-          <img class="description__image" src="../assets/images/1_item.png" alt="">
+          <img class="description__image" src="../assets/images/1_item.png" alt="1">
           <span class="description__title">С ГОЛОВОЙ В ПРОЕКТЕ</span>
           <div class="description__text">
             Гарантирую полное погружение в проект. Моя работа не в том, чтобы брать деньги 1 раз в месяц и тянуть время,
@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="description__item">
-          <img class="description__image" src="../assets/images/2_item.png" alt="">
+          <img class="description__image" src="../assets/images/2_item.png" alt="2">
           <span class="description__title">НЕ ДАЮ ПУСТЫХ ОБЕЩАНИЙ</span>
           <div class="description__text">
             Не знаю никаких секретов и волшебных таблеток, не даю пустых гарантий - могу обещать только то, что буду
@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="description__item">
-          <img class="description__image" src="../assets/images/3_item.png" alt="">
+          <img class="description__image" src="../assets/images/3_item.png" alt="3">
           <span class="description__title">ТОЛЬКО ПРАВДА</span>
           <div class="description__text">
             Не морочу голову клиентам, которым не нужен сайт и не пытаюсь что то впарить. Если маркетинг
@@ -31,7 +31,7 @@
           </div>
         </div>
         <div class="description__item">
-          <img class="description__image" src="../assets/images/4_item.png" alt="">
+          <img class="description__image" src="../assets/images/4_item.png" alt="4">
           <span class="description__title">БОЛЬШОЙ ОПЫТ</span>
           <div class="description__text">
             Занимаюсь маркетингом более 9 лет и за это время накопил опыт работы в крупных федеральных компаниях с
@@ -40,7 +40,7 @@
           </div>
         </div>
         <div class="description__item">
-          <img class="description__image" src="../assets/images/5_item.png" alt="">
+          <img class="description__image" src="../assets/images/5_item.png" alt="5">
           <span class="description__title">ВСЕГДА НА СВЯЗИ</span>
           <div class="description__text">
             Стараюсь моментально отвечать на любые запросы со стороны клиентов.
@@ -49,7 +49,7 @@
           </div>
         </div>
         <div class="description__item">
-          <img class="description__image" src="../assets/images/6_item.png" alt="">
+          <img class="description__image" src="../assets/images/6_item.png" alt="6">
           <span class="description__title">УПОР НА КАЧЕСТВО</span>
           <div class="description__text">
             Часто компании просто тянут резину, им не важно продвинуть сайт, им важно получить как можно больше
@@ -105,5 +105,4 @@ export default {
 
   &__link
     color: rgba(230, 87, 101, 1)
-
 </style>

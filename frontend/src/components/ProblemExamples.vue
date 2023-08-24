@@ -1,56 +1,47 @@
 <template>
   <section class="section-3">
-      <div class="problem-examples">
-        <div class="side-width">
+    <div class="problem-examples">
+      <div class="side-width">
         <div class="problem-examples__header">
           <div class="title-section">Решаю проблемы клиентов</div>
-          <div class="problem-examples__info">Примеры того, как решаются проблемы моих клиентов. У каждого уникальная задача
-            для решения которой требуются уникальные решения.</div>
+          <div class="problem-examples__info">Примеры того, как решаются проблемы моих клиентов. У каждого уникальная
+            задача, для решения которой требуются уникальные решения.
+          </div>
         </div>
-        </div>
-        <VueSlickCarousel class="problem-examples__content" v-bind="settings">
-          <div class="problem-examples__item">
-            <span class="problem-examples__title">Кажется что сайт не нравится пользователям?</span>
-            <div class="problem-examples__text">Может и не кажется. Проведу юзабилити аудит с помощью Яндекс Метрики и
-              асессоров. Докажу аналитически в чем проблемы сайта, дам готовые рекомендации для внедрения.</div>
-          </div>
-          <div class="problem-examples__item">
-            <span class="problem-examples__title">Нужны новые источники лидов?</span>
-            <div class="problem-examples__text">Не проблема. Креативно подойду к решению задачи.
-              Найду новые источники трафика.</div>
-          </div>
-          <div class="problem-examples__item">
-            <span class="problem-examples__title">Думаешь стоит ли сделать мобильное приложение?</span>
-            <div class="problem-examples__text">Возможно стоит. Приходи - обсудим, посчитаем затраты и эффективность.
-              А затем я найду подходящую для реализации команду.</div>
-          </div>
-          <div class="problem-examples__item">
-            <span class="problem-examples__title">Сомневаешься стоит ли вкладывать деньги в блог?</span>
-            <div class="problem-examples__text">Сомневаться нормально. Блог редко напрямую побуждает к покупке.
-              Стоит проанализировать его эффективность и оценить возможные затраты и “выхлоп”.</div>
-          </div>
-          <div class="problem-examples__item">
-            <span class="problem-examples__title">Раздумываешь создать ли блог?</span>
-            <div class="problem-examples__text">Приходи за рекомендациями. Проанализирую конкурентов. Составим список
-              тем, найдем редактора и подготовим SEO требования для блога.</div>
-          </div>
-          <div class="problem-examples__item">
-            <span class="problem-examples__title">Раздумываешь создать ли блог?</span>
-            <div class="problem-examples__text">Приходи за рекомендациями. Проанализирую конкурентов. Составим список
-              тем, найдем редактора и подготовим SEO требования для блога.</div>
-          </div>
-          <div class="problem-examples__item">
-            <span class="problem-examples__title">Раздумываешь создать ли блог?</span>
-            <div class="problem-examples__text">Приходи за рекомендациями. Проанализирую конкурентов. Составим список
-              тем, найдем редактора и подготовим SEO требования для блога.</div>
-          </div>
-          <div class="problem-examples__item">
-            <span class="problem-examples__title">Раздумываешь создать ли блог?</span>
-            <div class="problem-examples__text">Приходи за рекомендациями. Проанализирую конкурентов. Составим список
-              тем, найдем редактора и подготовим SEO требования для блога.</div>
-          </div>
-        </VueSlickCarousel>
       </div>
+      <VueSlickCarousel class="problem-examples__content" v-bind="settings">
+        <div class="problem-examples__item">
+          <span class="problem-examples__title">Кажется что сайт не нравится пользователям?</span>
+          <div class="problem-examples__text">Может и не кажется. Проведу юзабилити аудит с помощью Яндекс Метрики и
+            асессоров. Докажу аналитически, в чем проблемы сайта, дам готовые рекомендации для внедрения.
+          </div>
+        </div>
+        <div class="problem-examples__item">
+          <span class="problem-examples__title">Нужны новые источники лидов?</span>
+          <div class="problem-examples__text">Не проблема. Креативно подойду к решению задачи.
+            Найду новые источники трафика.
+          </div>
+        </div>
+        <div class="problem-examples__item">
+          <span class="problem-examples__title">Думаешь стоит ли сделать мобильное приложение?</span>
+          <div class="problem-examples__text">Возможно стоит. Приходи - обсудим, посчитаем затраты и эффективность.
+            А затем я найду подходящую для реализации команду.
+          </div>
+        </div>
+        <div class="problem-examples__item">
+          <span class="problem-examples__title">Сомневаешься стоит ли вкладывать деньги в блог?</span>
+          <div class="problem-examples__text">Сомневаться нормально. Блог редко напрямую побуждает к покупке.
+            Стоит проанализировать его эффективность и оценить возможные затраты и “выхлоп”.
+          </div>
+        </div>
+        <div class="problem-examples__item">
+          <span class="problem-examples__title">Раздумываешь создать ли блог?</span>
+          <div class="problem-examples__text">Приходи за рекомендациями. Проанализирую конкурентов. Составим список
+            тем, найдем редактора и подготовим SEO требования для блога.
+          </div>
+        </div>
+      </VueSlickCarousel>
+    </div>
   </section>
 </template>
 
@@ -67,9 +58,9 @@ export default {
       'settings': {
         'arrows': true,
         'dots': false,
-        'infinite': true,
-        'slidesToShow': 5,
-        'slidesToScroll': 1,
+        'infinite': false,
+        'slidesToShow': 4,
+        'slidesToScroll': 2,
         variableWidth: true
       }
     }

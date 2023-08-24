@@ -90,5 +90,4 @@ export default {
       left: 0
       background-image: url('../assets/images/check-red.png')
       background-repeat: no-repeat
-
 </style>

@@ -43,6 +43,7 @@ export default {
     background: url('../assets/images/bg-section-4.png') no-repeat bottom
     border: 1px solid rgba(208, 201, 214, 1)
     border-radius: 30px 0 0 30px
+    border-right: none
 
     img
       position: absolute

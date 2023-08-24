@@ -1,29 +1,29 @@
 <template>
-<section class="section-3">
-  <div class="side-width">
-    <div class="bounded">
-      <div class="title-section">Обо мне в цифрах</div>
-      <div class="about">
-        <div class="about__item">
-          <img src="../assets/images/10_item.png">
-          <span class="about__info">тысяч запросов продвинуто в ТОП10</span>
-        </div>
-        <div class="about__item">
-          <img src="../assets/images/2_item.png">
-          <span class="about__info">трафик на проекты более 2 миллионов</span>
-        </div>
-        <div class="about__item">
-          <img src="../assets/images/14_item.png">
-          <span class="about__info">проектов с нуля до окупаемости</span>
-        </div>
-        <div class="about__item">
-          <img src="../assets/images/10_item.png">
-          <span class="about__info">10 лет в маркетинге и разработке</span>
+  <section class="section-3">
+    <div class="side-width">
+      <div class="bounded">
+        <div class="title-section">Обо мне в цифрах</div>
+        <div class="about">
+          <div class="about__item">
+            <img src="../assets/images/10_item.png" alt="10">
+            <span class="about__info">тысяч запросов продвинуто в ТОП10</span>
+          </div>
+          <div class="about__item">
+            <img src="../assets/images/2_item.png" alt="2">
+            <span class="about__info">трафик на проекты более 2 миллионов</span>
+          </div>
+          <div class="about__item">
+            <img src="../assets/images/14_item.png" alt="14">
+            <span class="about__info">проектов с нуля до окупаемости</span>
+          </div>
+          <div class="about__item">
+            <img src="../assets/images/10_item.png" alt="10">
+            <span class="about__info">10 лет в маркетинге и разработке</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 </template>
 
 <script>
@@ -48,5 +48,4 @@ export default {
     font-weight: 500
     line-height: 22px
     text-transform: uppercase
-
 </style>

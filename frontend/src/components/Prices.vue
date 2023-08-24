@@ -152,5 +152,4 @@ export default {
     font-size: 18px
     font-weight: 700
     font-family: 'Unbounded', 'sans-serif'
-
 </style>

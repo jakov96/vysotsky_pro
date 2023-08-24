@@ -2,11 +2,11 @@
   <section class="section-3 podcast">
     <div class="side-width">
       <div class="podcast">
-        <div><img src="../assets/images/play.png" alt=""></div>
+        <img src="../assets/images/play.png" alt="Play">
         <div class="podcast__info">
           <div class="podcast__title">Рассказываю о SEO на подкасте «Профориентация» в Yandex Music</div>
-          <span class="podcast__text">Был приглашен на подкаст о маркетинге как эксперт в области SEO. Послушайте) мы старались,
-        чтобы было интересно)</span>
+          <span class="podcast__text">Был приглашен на подкаст о маркетинге как эксперт в области SEO.
+            Послушайте) мы старались, чтобы было интересно)</span>
         </div>
       </div>
     </div>
@@ -46,5 +46,4 @@ export default {
   &__text
     font-size: 15px
     line-height: 20px
-
 </style>

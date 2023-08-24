@@ -20,8 +20,8 @@
         <div class="wrapper__left">
           <div class="wrap">
             <div class="wrap__title">ВЫВЕДУ ВАШ БИЗНЕС НА НОВЫЙ УРОВЕНЬ</div>
-            <span class="wrap__text">Сделаю эффективный маркетинг для вашего бизнеса. Настрою прозрачную аналитику, приведу клиентов,
-          увеличу конверсию сайта.</span>
+            <span class="wrap__text">Сделаю эффективный маркетинг для вашего бизнеса. Настрою прозрачную аналитику,
+              приведу клиентов, увеличу конверсию сайта.</span>
           </div>
           <div class="consultation">
             <div class="consultation__example"><a href="#">Скачать пример договора</a></div>
@@ -67,8 +67,8 @@ export default {
 header
   background: url("../assets/images/bg-header.png") no-repeat top
 
-.side-width
-  padding: 40px 0 0
+  .side-width
+    padding: 40px 0 0
 
   nav
     display: flex
@@ -250,5 +250,4 @@ header
     &__info
       font-size: 11px
       line-height: 13px
-
 </style>

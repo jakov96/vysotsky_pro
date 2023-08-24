@@ -123,5 +123,4 @@ export default {
       padding: 20px 95px
       background: #3F3356
       border-radius: 30px
-
 </style>

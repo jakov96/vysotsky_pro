@@ -1,57 +1,61 @@
 <template>
-  <div class="side-width">
-    <div class="related-prices">
-      <div class="title-section">Цены на сопутствующие услуги</div>
-      <div class="related-prices__wrap">
-        <div class="related-prices__item">
-          <div class="related-prices__top">
-            <div class="related-prices__left-column">
-              <span class="related-prices__title">Разработка сайтов</span>
-              <div class="related-prices__description">Если нужно быстро понять почему сайт не привлекает трафик.</div>
+  <section class="section-2">
+    <div class="side-width">
+      <div class="related-prices">
+        <div class="title-section">Цены на сопутствующие услуги</div>
+        <div class="related-prices__wrap">
+          <div class="related-prices__item">
+            <div class="related-prices__top">
+              <div class="related-prices__left-column">
+                <span class="related-prices__title">Разработка сайтов</span>
+                <div class="related-prices__description">Если нужно быстро понять почему сайт не привлекает трафик.
+                </div>
+              </div>
+              <div class="related-prices__right-column">
+                <ul>
+                  <li>РЕЗУЛЬТАТ ЧЕРЕЗ 1-3 ДНЯ</li>
+                  <li>ТЕХНИЧЕСКИЙ И КОММЕРЧЕСКИЙ АУДИТ</li>
+                  <li>СРАВНЕНИЕ С КОНКУРЕНТАМИ</li>
+                </ul>
+              </div>
             </div>
-            <div class="related-prices__right-column">
-              <ul>
-                <li>РЕЗУЛЬТАТ ЧЕРЕЗ 1-3 ДНЯ</li>
-                <li>ТЕХНИЧЕСКИЙ И КОММЕРЧЕСКИЙ АУДИТ</li>
-                <li>СРАВНЕНИЕ С КОНКУРЕНТАМИ</li>
-              </ul>
-            </div>
-          </div>
-          <hr>
-          <div class="related-prices__bottom">
-            <div class="related-prices__price-block">
-              <span class="related-prices__price">500,000</span>
-              <span class="related-prices__currency">рублей</span>
-            </div>
-            <button class="btn feedback">ОСТАВИТЬ ЗАЯВКУ</button>
-          </div>
-        </div>
-        <div class="related-prices__item">
-          <div class="related-prices__top">
-            <div class="related-prices__left-column">
-              <span class="related-prices__title">Разработка сайтов</span>
-              <div class="related-prices__description">Если нужно быстро понять почему сайт не привлекает трафик.</div>
-            </div>
-            <div class="related-prices__right-column">
-              <ul>
-                <li>РЕЗУЛЬТАТ ЧЕРЕЗ 1-3 ДНЯ</li>
-                <li>ТЕХНИЧЕСКИЙ И КОММЕРЧЕСКИЙ АУДИТ</li>
-                <li>СРАВНЕНИЕ С КОНКУРЕНТАМИ</li>
-              </ul>
+            <hr>
+            <div class="related-prices__bottom">
+              <div class="related-prices__price-block">
+                <span class="related-prices__price">500,000</span>
+                <span class="related-prices__currency">рублей</span>
+              </div>
+              <button class="btn feedback">ОСТАВИТЬ ЗАЯВКУ</button>
             </div>
           </div>
-          <hr>
-          <div class="related-prices__bottom">
-            <div class="related-prices__price-block">
-              <span class="related-prices__price">500,000</span>
-              <span class="related-prices__currency">рублей</span>
+          <div class="related-prices__item">
+            <div class="related-prices__top">
+              <div class="related-prices__left-column">
+                <span class="related-prices__title">Разработка сайтов</span>
+                <div class="related-prices__description">Если нужно быстро понять почему сайт не привлекает трафик.
+                </div>
+              </div>
+              <div class="related-prices__right-column">
+                <ul>
+                  <li>РЕЗУЛЬТАТ ЧЕРЕЗ 1-3 ДНЯ</li>
+                  <li>ТЕХНИЧЕСКИЙ И КОММЕРЧЕСКИЙ АУДИТ</li>
+                  <li>СРАВНЕНИЕ С КОНКУРЕНТАМИ</li>
+                </ul>
+              </div>
             </div>
-            <button class="btn feedback">ОСТАВИТЬ ЗАЯВКУ</button>
+            <hr>
+            <div class="related-prices__bottom">
+              <div class="related-prices__price-block">
+                <span class="related-prices__price">500,000</span>
+                <span class="related-prices__currency">рублей</span>
+              </div>
+              <button class="btn feedback">ОСТАВИТЬ ЗАЯВКУ</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

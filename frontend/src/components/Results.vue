@@ -10,7 +10,7 @@
             <span class="results__info">Заявки (в месяц): было 142 - стало 257 | Срок работ - 6 месяцев</span>
           </div>
         </div>
-       <div class="results__item">
+        <div class="results__item">
           <img src="../assets/images/graph.png" alt="">
           <div class="results__description">
             <span class="results__title">ПРОДВИЖЕНИЕ САЙТА АГЕНТСТВА НЕДВИЖИМОСТИ</span>

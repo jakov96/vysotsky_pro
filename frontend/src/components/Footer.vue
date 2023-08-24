@@ -43,12 +43,12 @@
           </div>
           <div class="bottom__menu">
             <span class="bottom__menu-title">Обучение</span>
-            <span  href="#" class="bottom__menu-title">Блог</span>
+            <span href="#" class="bottom__menu-title">Блог</span>
           </div>
         </div>
       </div>
       <div class="copyright">
-        <span class="copyright__author">2018-{{ currentYear }} Высоцкий Кирилл Алексеевич</span>
+        <span class="copyright__author">2018-{{ new Date().getFullYear() }} Высоцкий Кирилл Алексеевич</span>
         <span class="copyright__title">VYSOTSKY.PRO</span>
       </div>
     </div>
@@ -57,12 +57,7 @@
 
 <script>
 export default {
-  name: 'Footer',
-  data () {
-    return {
-      'currentYear': new Date().getFullYear()
-    }
-  }
+  name: 'Footer'
 }
 </script>
 
@@ -186,5 +181,4 @@ footer
   &__title
     font-size: 14px
     font-weight: 700
-
 </style>
