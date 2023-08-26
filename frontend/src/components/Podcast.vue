@@ -2,7 +2,7 @@
   <section class="section-3 podcast">
     <div class="side-width">
       <div class="podcast">
-        <img src="../assets/images/play.png" alt="Play">
+        <a href="https://music.yandex.ru" target="_blank"><img src="../assets/images/play.png" alt="Play"></a>
         <div class="podcast__info">
           <div class="podcast__title">Рассказываю о SEO на подкасте «Профориентация» в Yandex Music</div>
           <span class="podcast__text">Был приглашен на подкаст о маркетинге как эксперт в области SEO.
@@ -23,7 +23,7 @@ export default {
 .section-3
   &.podcast
     max-width: 1920px
-    margin: 0 auto
+    margin: 100px auto 0
     background: url('../assets/images/soundtrack.png') no-repeat left center, url('../assets/images/soundtrack-2.png') no-repeat right center
 
 .podcast

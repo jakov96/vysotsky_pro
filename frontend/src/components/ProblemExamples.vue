@@ -61,7 +61,7 @@ export default {
         'infinite': false,
         'slidesToShow': 4,
         'slidesToScroll': 2,
-        variableWidth: true
+        'variableWidth': true
       }
     }
   }
@@ -123,21 +123,20 @@ export default {
     font-size: 15px
     line-height: 20px
 
-.slick-arrow
-  top: 60%
-  width: 30px
-  height: 24px
+  .slick-arrow
+    top: 60%
+    width: 30px
+    height: 24px
 
-  &:before
-    content: none
+    &:before
+      content: none
 
-.slick-prev
-  left: 0
-  background: url('../assets/images/next-arrow.png') no-repeat center center
-  transform: rotate(180deg)
+  .slick-prev
+    left: 0
+    background: url('../assets/images/prev-arrow.png') no-repeat center center
 
-.slick-next
-  left: 30px
-  right: initial
-  background: url('../assets/images/next-arrow.png') no-repeat center center
+  .slick-next
+    left: 30px
+    right: initial
+    background: url('../assets/images/next-arrow.png') no-repeat center center
 </style>

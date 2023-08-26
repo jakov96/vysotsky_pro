@@ -1,51 +1,53 @@
 <template>
   <section class="section-2">
-    <div class="side-width">
-      <div class="prices">
-        <div class="title-section">Цены на SEO продвижение</div>
-        <div class="prices__wrap">
-          <div class="prices__item">
-            <span class="prices__title">SEO-аудит</span>
-            <div class="prices__description">Если нужно быстро понять почему сайт не привлекает трафик.</div>
-            <div class="prices__price">50,000</div>
-            <span class="prices__currency">рублей</span>
-            <div class="prices__info">
-              <ul>
-                <li>РЕЗУЛЬТАТ ЧЕРЕЗ 1-3 ДНЯ</li>
-                <li>ТЕХНИЧЕСКИЙ И КОММЕРЧЕСКИЙ АУДИТ</li>
-                <li>СРАВНЕНИЕ С КОНКУРЕНТАМИ</li>
-              </ul>
+    <div class="wrapper">
+      <div class="side-width">
+        <div class="prices">
+          <div class="title-section">Цены на SEO продвижение</div>
+          <div class="prices__wrap">
+            <div class="prices__item">
+              <span class="prices__title">SEO-аудит</span>
+              <div class="prices__description">Если нужно быстро понять почему сайт не привлекает трафик.</div>
+              <div class="prices__price">50,000</div>
+              <span class="prices__currency">рублей</span>
+              <div class="prices__info">
+                <ul>
+                  <li>РЕЗУЛЬТАТ ЧЕРЕЗ 1-3 ДНЯ</li>
+                  <li>ТЕХНИЧЕСКИЙ И КОММЕРЧЕСКИЙ АУДИТ</li>
+                  <li>СРАВНЕНИЕ С КОНКУРЕНТАМИ</li>
+                </ul>
+              </div>
+              <button class="btn feedback">ОСТАВИТЬ ЗАЯВКУ</button>
             </div>
-            <button class="btn feedback">ОСТАВИТЬ ЗАЯВКУ</button>
-          </div>
-          <div class="prices__item">
-            <span class="prices__title">SEO-продвижение сайта</span>
-            <div class="prices__description">Продвину сайт за 2-3 месяца и увеличу трафик и количество заявок.</div>
-            <div class="prices__price">100,000</div>
-            <span class="prices__currency">рублей в месяц</span>
-            <div class="prices__info">
-              <ul>
-                <li>ГАРАНТИЯ УВЕЛИЧЕНИЯ ТРАФИКА</li>
-                <li>ПОДРОБНАЯ ОТЧЕТНОСТЬ</li>
-                <li>МОНИТОРИНГ КОНКУРЕНТОВ</li>
-                <li>УВЕЛИЧЕНИЕ КОНВЕРСИИ САЙТА</li>
-              </ul>
+            <div class="prices__item">
+              <span class="prices__title">SEO-продвижение сайта</span>
+              <div class="prices__description">Продвину сайт за 2-3 месяца и увеличу трафик и количество заявок.</div>
+              <div class="prices__price">100,000</div>
+              <span class="prices__currency">рублей в месяц</span>
+              <div class="prices__info">
+                <ul>
+                  <li>ГАРАНТИЯ УВЕЛИЧЕНИЯ ТРАФИКА</li>
+                  <li>ПОДРОБНАЯ ОТЧЕТНОСТЬ</li>
+                  <li>МОНИТОРИНГ КОНКУРЕНТОВ</li>
+                  <li>УВЕЛИЧЕНИЕ КОНВЕРСИИ САЙТА</li>
+                </ul>
+              </div>
+              <button class="btn order">ЗАКАЗАТЬ</button>
             </div>
-            <button class="btn order">ЗАКАЗАТЬ</button>
-          </div>
-          <div class="prices__item">
-            <span class="prices__title">Персональная консультация</span>
-            <div class="prices__description">Полезная консультация на любую тему связанную с проектом.</div>
-            <div class="prices__price">5,000</div>
-            <span class="prices__currency">рублей</span>
-            <div class="prices__info">
-              <ul>
-                <li>ЛЮБЫМ УДОБНЫМ СПОСОБОМ</li>
-                <li>ГАРАНТИРУЮ ПОЛЕЗНОСТЬ</li>
-                <li>ЗАПИСЬ КОНСУЛЬТАЦИИ</li>
-              </ul>
+            <div class="prices__item">
+              <span class="prices__title">Персональная консультация</span>
+              <div class="prices__description">Полезная консультация на любую тему связанную с проектом.</div>
+              <div class="prices__price">5,000</div>
+              <span class="prices__currency">рублей</span>
+              <div class="prices__info">
+                <ul>
+                  <li>ЛЮБЫМ УДОБНЫМ СПОСОБОМ</li>
+                  <li>ГАРАНТИРУЮ ПОЛЕЗНОСТЬ</li>
+                  <li>ЗАПИСЬ КОНСУЛЬТАЦИИ</li>
+                </ul>
+              </div>
+              <button class="btn feedback">ОСТАВИТЬ ЗАЯВКУ</button>
             </div>
-            <button class="btn feedback">ОСТАВИТЬ ЗАЯВКУ</button>
           </div>
         </div>
       </div>
@@ -60,6 +62,11 @@ export default {
 </script>
 
 <style lang="sass">
+
+.section-2
+  .wrapper
+    background: url('../assets/images/bg-section-2-revert.png') no-repeat left center, url('../assets/images/bg-section-2.png') no-repeat right center
+
 .prices
   display: flex
   flex-direction: column

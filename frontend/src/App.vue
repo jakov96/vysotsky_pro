@@ -11,6 +11,7 @@
     <ProblemExamples/>
     <Who/>
     <About/>
+    <Teaching/>
     <Podcast/>
     <Footer/>
   </div>
@@ -30,10 +31,12 @@ import Results from './components/Results'
 import ProblemExamples from './components/ProblemExamples'
 import Who from './components/Who'
 import Podcast from './components/Podcast'
+import Teaching from './components/Teaching'
 
 export default {
   name: 'App',
   components: {
+    Teaching,
     Podcast,
     About,
     Description,
