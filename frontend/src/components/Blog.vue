@@ -9,7 +9,9 @@
             <span class="blog__date">13 июня 2021</span>
             <span class="blog__title">Что такое Title и зачем нужен для SEO?</span>
           </div>
-          <button class="btn">ЧИТАТЬ</button>
+          <a href="#">
+            <button class="btn">ЧИТАТЬ</button>
+          </a>
         </div>
         <div class="blog__item">
           <img src="../assets/images/blog-photo.png" alt="">
@@ -17,7 +19,9 @@
             <span class="blog__date">13 июня 2021</span>
             <span class="blog__title">Что такое Title и зачем нужен для SEO?</span>
           </div>
-          <button class="btn">ЧИТАТЬ</button>
+          <a href="#">
+            <button class="btn">ЧИТАТЬ</button>
+          </a>
         </div>
         <div class="blog__item">
           <img src="../assets/images/blog-photo.png" alt="">
@@ -25,7 +29,9 @@
             <span class="blog__date">13 июня 2021</span>
             <span class="blog__title">Что такое Title и зачем нужен для SEO?</span>
           </div>
-          <button class="btn">ЧИТАТЬ</button>
+          <a href="#">
+            <button class="btn">ЧИТАТЬ</button>
+          </a>
         </div>
         <div class="blog__item">
           <img src="../assets/images/blog-photo.png" alt="">
@@ -33,7 +39,9 @@
             <span class="blog__date">13 июня 2021</span>
             <span class="blog__title">Что такое Title и зачем нужен для SEO?</span>
           </div>
-          <button class="btn">ЧИТАТЬ</button>
+          <a href="#">
+            <button class="btn">ЧИТАТЬ</button>
+          </a>
         </div>
       </VueSlickCarousel>
     </div>

@@ -13,6 +13,7 @@
     <About/>
     <Teaching/>
     <Podcast/>
+    <SiteAnalysis/>
     <Blog/>
     <Footer/>
   </div>
@@ -34,23 +35,25 @@ import Who from './components/Who'
 import Podcast from './components/Podcast'
 import Teaching from './components/Teaching'
 import Blog from './components/Blog'
+import SiteAnalysis from './components/SiteAnalysis'
 
 export default {
   name: 'App',
   components: {
-    Blog,
-    Teaching,
-    Podcast,
     About,
+    Blog,
     Description,
     Footer,
     Header,
+    Podcast,
     Prices,
     PricesDetail,
     ProblemExamples,
     RelatedPrices,
     Results,
     Services,
+    SiteAnalysis,
+    Teaching,
     Who,
     WorkFormat
   }
