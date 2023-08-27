@@ -13,6 +13,7 @@
     <About/>
     <Teaching/>
     <Podcast/>
+    <Blog/>
     <Footer/>
   </div>
 </template>
@@ -32,10 +33,12 @@ import ProblemExamples from './components/ProblemExamples'
 import Who from './components/Who'
 import Podcast from './components/Podcast'
 import Teaching from './components/Teaching'
+import Blog from './components/Blog'
 
 export default {
   name: 'App',
   components: {
+    Blog,
     Teaching,
     Podcast,
     About,
