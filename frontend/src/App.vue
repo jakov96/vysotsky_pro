@@ -13,6 +13,7 @@
     <About/>
     <Teaching/>
     <Podcast/>
+    <Reviews/>
     <Questions/>
     <SiteAnalysis/>
     <Blog/>
@@ -38,6 +39,7 @@ import Teaching from './components/Teaching'
 import Blog from './components/Blog'
 import SiteAnalysis from './components/SiteAnalysis'
 import Questions from './components/Questions'
+import Reviews from './components/Reviews'
 
 export default {
   name: 'App',
@@ -53,6 +55,7 @@ export default {
     ProblemExamples,
     RelatedPrices,
     Results,
+    Reviews,
     Services,
     SiteAnalysis,
     Teaching,

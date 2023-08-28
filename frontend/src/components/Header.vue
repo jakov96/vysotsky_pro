@@ -3,15 +3,15 @@
     <div class="side-width">
       <nav>
         <div class="logo">
-          <span class="title">/ VYSOTSKY /</span>
+          <a href="/" class="title">/ VYSOTSKY /</a>
           <span class="info">SEO-оптимизация и создание сайтов</span>
         </div>
         <div class="menu">
           <ul>
-            <li>ГЛАВНАЯ</li>
-            <li class="active">ЗАКАЗАТЬ SEO</li>
-            <li>РАЗРАБОТКА САЙТОВ</li>
-            <li>БЛОГ</li>
+            <li class="active"><a href="#">ГЛАВНАЯ</a></li>
+            <li><a href="#">ЗАКАЗАТЬ SEO</a></li>
+            <li><a href="#">РАЗРАБОТКА САЙТОВ</a></li>
+            <li><a href="#">БЛОГ</a></li>
           </ul>
           <button class="btn call">ЗАКАЗАТЬ ЗВОНОК</button>
         </div>
@@ -45,7 +45,7 @@
             </ul>
             <div class="diploma">
               <img src="../assets/images/diplom.png" alt="Сертификат маркетолога">
-              <p class="diploma__link"><a href="#">СЕРТИФИКАТ МАРКЕТОЛОГА</a></p>
+              <p class="diploma__link"><a href="#" target="_blank">СЕРТИФИКАТ МАРКЕТОЛОГА</a></p>
             </div>
           </div>
           <img class="photo" src="../assets/images/photo.png" alt="Фото">
@@ -82,9 +82,11 @@ header
     .logo
       .title
         margin-right: 30px
+        color: #000
         font-size: 14px
         font-weight: 700
         line-height: 18px
+        text-decoration: none
 
       .info
         font-size: 14px
@@ -108,7 +110,12 @@ header
           margin: 0 25px 0 0
 
         li.active
-          color: #E65765
+          a
+            color: #E65765
+
+        a
+          color: #000
+          text-decoration: none
 
     .call
       margin-left: 40px
