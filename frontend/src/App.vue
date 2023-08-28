@@ -13,6 +13,7 @@
     <About/>
     <Teaching/>
     <Podcast/>
+    <Questions/>
     <SiteAnalysis/>
     <Blog/>
     <Footer/>
@@ -36,6 +37,7 @@ import Podcast from './components/Podcast'
 import Teaching from './components/Teaching'
 import Blog from './components/Blog'
 import SiteAnalysis from './components/SiteAnalysis'
+import Questions from './components/Questions'
 
 export default {
   name: 'App',
@@ -54,6 +56,7 @@ export default {
     Services,
     SiteAnalysis,
     Teaching,
+    Questions,
     Who,
     WorkFormat
   }
