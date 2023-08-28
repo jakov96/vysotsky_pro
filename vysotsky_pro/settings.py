@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
+    'landing',
 ]
 
 MIDDLEWARE = [
@@ -53,10 +54,6 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
 ]
-
-CORS_ORIGIN_WHITELIST = (
-    'localhost:8080',
-)
 
 ROOT_URLCONF = 'vysotsky_pro.urls'
 
@@ -126,8 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static_debug'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_release')
+STATIC_ROOT = BASE_DIR / 'static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
