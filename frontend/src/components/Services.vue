@@ -123,4 +123,24 @@ export default {
       padding: 20px 95px
       background: #3F3356
       border-radius: 30px
+
+@media (max-width: 480px)
+  .items
+    flex-direction: column
+
+    .item
+      width: 100%
+      padding: 25px
+
+      &:not(:last-child)
+        margin: 0 0 10px
+
+      .title
+        margin: 20px 0 15px
+
+      .description
+        margin-top: 20px
+
+        ul
+          margin: 0
 </style>

@@ -3,8 +3,10 @@
     <div class="head">
       <div class="side-width">
         <div class="head__logo">
-          <span class="head__title">/ VYSOTSKY /</span>
-          <span class="head__info">SEO-оптимизация и создание сайтов</span>
+          <div class="head__logo-wrap">
+            <span class="head__title">/ VYSOTSKY /</span>
+            <span class="head__info">SEO-оптимизация и создание сайтов</span>
+          </div>
           <div class="head__social">
             <a href="#" target="_blank" class="head__icon telegram"></a>
             <a href="#" target="_blank" class="head__icon whatsapp"></a>
@@ -181,4 +183,64 @@ footer
   &__title
     font-size: 14px
     font-weight: 700
+
+@media (max-width: 480px)
+  footer
+    margin: 100px 0 0
+
+  .head
+    border: none
+
+    .side-width
+      flex-direction: column
+      align-items: flex-start
+
+    &__logo
+      width: 100%
+      flex-direction: column
+      align-items: flex-start
+
+    &__logo-wrap
+      width: 100%
+      display: flex
+      flex-direction: column
+      padding: 20px 40px
+      border: 1px solid rgba(236, 233, 241, 1)
+      border-radius: 60px 60px 0 0
+      box-sizing: border-box
+
+    &__title
+      margin: 0
+
+    &__social
+      margin: 30px 0 20px
+      padding: 0 40px
+
+    .btn
+      margin-left: 40px
+
+  .bottom
+    flex-direction: column
+    padding: 30px 40px
+
+    &__left
+      width: 100%
+
+    &__right
+      width: 100%
+      flex-direction: column
+      border: none
+
+    &__menu
+      margin-top: 30px
+
+    &__menu-title
+      font-weight: 700
+
+  .copyright
+    flex-direction: column
+    padding: 20px 40px 30px
+
+    &__title
+      margin-top: 10px
 </style>

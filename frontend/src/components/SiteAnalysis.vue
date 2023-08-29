@@ -191,4 +191,75 @@ export default {
     .btn
       width: 360px
       padding: 20px 0
+
+@media (max-width: 480px)
+  .site-analysis
+    padding: 20px 13px 40px
+
+    &__wrap
+      flex-direction: column
+      padding: 0
+
+    &__title
+      font-size: 28px
+
+    &__description
+      width: 100%
+
+    &__info
+      flex-direction: column
+      margin-top: 30px
+
+    &__info-item
+      width: 100%
+
+      &:not(:first-child)
+        margin-top: 20px
+
+    &__subtitle
+      font-weight: 700
+
+    &__result
+      margin-top: 30px
+      font-size: 12px
+
+    &__preview
+      width: 100%
+      margin-top: 30px
+
+    &__preview-caption
+      padding: 20px
+      font-size: 15px
+
+  .audit-form
+    position: initial
+    margin-top: 20px
+    padding: 20px 15px 30px
+
+    &__title
+      font-size: 22px
+
+    &__text
+      font-size: 14px
+
+    &__data
+      flex-direction: column
+      margin-top: 30px
+
+      input
+        width: auto
+        padding: 16px
+        font-size: 16px
+
+        &:not(:last-child)
+          margin: 10px 0 0
+
+      .btn
+        width: 100%
+        order: 1
+        margin-top: 20px
+        font-size: 15px
+
+    &__agree
+      order: 0
 </style>

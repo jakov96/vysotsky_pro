@@ -62,7 +62,17 @@ export default {
         'infinite': true,
         'slidesToShow': 3,
         'slidesToScroll': 1,
-        'variableWidth': true
+        'variableWidth': true,
+        'responsive': [
+          {
+            'breakpoint': 480,
+            'settings': {
+              'arrows': false,
+              'slidesToShow': 2,
+              'slidesToScroll': 1
+            }
+          }
+        ]
       }
     }
   }
@@ -137,4 +147,15 @@ export default {
     &:hover
       background: rgba(255, 214, 0, 1)
       color: rgba(63, 51, 86, 1)
+
+@media (max-width: 480px)
+  .blog
+    &__item
+      padding: 20px
+
+    .slick-slide
+      width: 400px !important
+      margin: 0 20px
+      box-sizing: border-box
+
 </style>

@@ -48,4 +48,23 @@ export default {
     font-weight: 500
     line-height: 22px
     text-transform: uppercase
+
+@media (max-width: 480px)
+  .about
+    flex-direction: column
+
+    &__item
+      width: 100%
+      align-items: center
+      padding: 26px 0
+      border-top: 1px solid rgba(208, 201, 214, 1)
+
+      &:last-child
+        border-bottom: 1px solid rgba(208, 201, 214, 1)
+
+      img
+        width: 190px
+
+    &__info
+      font-weight: 700
 </style>

@@ -82,4 +82,35 @@ export default {
     font-weight: 500
     line-height: 22px
     text-transform: uppercase
+
+@media (max-width: 480px)
+  .work-format
+    padding: 0 13px
+
+    &__header
+      flex-direction: column
+
+    &__info
+      width: 100%
+
+    &__content
+      flex-direction: column
+      border: none
+
+    &__item
+      width: 100%
+      margin-bottom: 10px
+      padding: 20px
+      background: #F7F5F9 url('../assets/images/bg-section-mobile-2.png') no-repeat left bottom
+      background-size: cover
+      border-radius: 45px
+      box-sizing: border-box
+
+    &__title
+      order: 0
+      margin: 0
+
+    img
+      order: 1
+
 </style>

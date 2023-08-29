@@ -154,4 +154,18 @@ export default {
   .btn
     width: 300px
     margin: 30px auto 0
+
+@media (max-width: 480px)
+  .questions-wrap
+    flex-direction: column
+
+    .questions
+      width: 100%
+
+    .question-form
+      width: 100%
+      padding: 20px 15px 30px
+
+      &__title
+        font-size: 20px
 </style>

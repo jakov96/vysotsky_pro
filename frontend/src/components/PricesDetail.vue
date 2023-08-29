@@ -90,4 +90,32 @@ export default {
       left: 0
       background-image: url('../assets/images/check-red.png')
       background-repeat: no-repeat
+
+@media (max-width: 480px)
+  .prices-detail
+    flex-direction: column
+
+    &__description
+      width: 100%
+
+    &__title
+      font-size: 28px
+      line-height: 34px
+
+    &__text
+      margin: 20px 0 30px
+      font-size: 14px
+
+    &__checklist
+      width: 100%
+      flex-direction: column
+
+      ul
+        padding: 0
+
+      ul > li:not(:first-child)
+        margin: 10px 0 0 0
+
+    &__right
+      margin-top: 10px
 </style>

@@ -68,4 +68,30 @@ export default {
     &:last-child
       border-bottom: none
 
+@media (max-width: 480px)
+  .who
+    flex-direction: column
+    margin-top: 60px
+
+    &__photo
+      width: 100%
+      height: 270px
+      border: 1px solid rgba(208, 201, 214, 1)
+      border-radius: 30px
+
+      img
+        height: 300px
+        left: 25%
+
+    &__info
+      width: 100%
+      height: auto
+      margin: 20px 0
+      padding: 0
+
+    &__item
+      padding: 20px 30px
+      font-size: 14px
+      line-height: 20px
+
 </style>

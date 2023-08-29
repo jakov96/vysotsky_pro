@@ -56,8 +56,32 @@
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
+
 export default {
-  name: 'Prices'
+  name: 'Prices',
+  components: { VueSlickCarousel },
+  data () {
+    return {
+      'settings': {
+        'mobileFirst': true,
+        'responsive': [
+          {
+            breakpoint: 481,
+            settings: 'unslick'
+          },
+          {
+            'breakpoint': 480,
+            'settings': {
+              'arrows': false,
+              'slidesToShow': 2,
+              'slidesToScroll': 1
+            }
+          }
+        ]
+      }
+    }
+  }
 }
 </script>
 
@@ -78,6 +102,9 @@ export default {
     display: flex
     justify-content: space-between
     align-items: center
+
+  &__wrap-mobile
+    display: none
 
   .title-section
     text-align: center
@@ -159,4 +186,23 @@ export default {
     font-size: 18px
     font-weight: 700
     font-family: 'Unbounded', 'sans-serif'
+
+@media (max-width: 480px)
+  .section-2
+    .wrapper
+      padding: 0 13px
+      background: none
+
+  .prices
+    padding: 30px 18px 50px
+    background: #f7f5f9
+
+    &__wrap
+      display: none
+
+    &__item
+      border-radius: 30px
+
+    &__item
+      width: 100%
 </style>
