@@ -10,6 +10,14 @@
     <Results/>
     <ProblemExamples/>
     <Who/>
+    <About/>
+    <Teaching/>
+    <Podcast/>
+    <Reviews/>
+    <Questions/>
+    <SiteAnalysis/>
+    <Blog/>
+    <Footer/>
   </div>
 </template>
 
