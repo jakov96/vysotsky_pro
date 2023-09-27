@@ -35,7 +35,18 @@ export default {
         'infinite': true,
         'slidesToShow': 3,
         'slidesToScroll': 2,
-        'variableWidth': true
+        'variableWidth': true,
+        'responsive': [
+          {
+            'breakpoint': 480,
+            'settings': {
+              'arrows': true,
+              'dots': false,
+              'slidesToShow': 1,
+              'slidesToScroll': 1
+            }
+          }
+        ]
       }
     }
   }
@@ -83,4 +94,17 @@ export default {
         left: 30px
         right: initial
         background: url('../assets/images/next-arrow.png') no-repeat center center
+
+@media (max-width: 480px)
+  .teaching
+    &__content
+      flex-direction: column
+      margin-left: 0
+
+    &__info
+      width: 100%
+
+    &__photos
+      width: 100%
+
 </style>

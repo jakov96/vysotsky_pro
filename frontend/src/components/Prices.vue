@@ -17,6 +17,47 @@
                   <li>СРАВНЕНИЕ С КОНКУРЕНТАМИ</li>
                 </ul>
               </div>
+            </div>
+            <div class="prices__item">
+              <span class="prices__title">SEO-продвижение сайта</span>
+              <div class="prices__description">Продвину сайт за 2-3 месяца и увеличу трафик и количество заявок.</div>
+              <div class="prices__price">100,000</div>
+              <span class="prices__currency">рублей в месяц</span>
+              <div class="prices__info">
+                <ul>
+                  <li>ГАРАНТИЯ УВЕЛИЧЕНИЯ ТРАФИКА</li>
+                  <li>ПОДРОБНАЯ ОТЧЕТНОСТЬ</li>
+                  <li>УВЕЛИЧЕНИЕ КОНВЕРСИИ САЙТА</li>
+                </ul>
+              </div>
+            </div>
+            <div class="prices__item">
+              <span class="prices__title">Персональная консультация</span>
+              <div class="prices__description">Полезная консультация на любую тему связанную с проектом.</div>
+              <div class="prices__price">5,000</div>
+              <span class="prices__currency">рублей</span>
+              <div class="prices__info">
+                <ul>
+                  <li>ЛЮБЫМ УДОБНЫМ СПОСОБОМ</li>
+                  <li>ГАРАНТИРУЮ ПОЛЕЗНОСТЬ</li>
+                  <li>ЗАПИСЬ КОНСУЛЬТАЦИИ</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <VueSlickCarousel class="prices__wrap mobile" v-bind="settings">
+            <div class="prices__item">
+              <span class="prices__title">SEO-аудит</span>
+              <div class="prices__description">Если нужно быстро понять почему сайт не привлекает трафик.</div>
+              <div class="prices__price">50,000</div>
+              <span class="prices__currency">рублей</span>
+              <div class="prices__info">
+                <ul>
+                  <li>РЕЗУЛЬТАТ ЧЕРЕЗ 1-3 ДНЯ</li>
+                  <li>ТЕХНИЧЕСКИЙ И КОММЕРЧЕСКИЙ АУДИТ</li>
+                  <li>СРАВНЕНИЕ С КОНКУРЕНТАМИ</li>
+                </ul>
+              </div>
               <button class="btn feedback">ОСТАВИТЬ ЗАЯВКУ</button>
             </div>
             <div class="prices__item">
@@ -48,7 +89,7 @@
               </div>
               <button class="btn feedback">ОСТАВИТЬ ЗАЯВКУ</button>
             </div>
-          </div>
+          </VueSlickCarousel>
         </div>
       </div>
     </div>
@@ -64,17 +105,13 @@ export default {
   data () {
     return {
       'settings': {
-        'mobileFirst': true,
         'responsive': [
-          {
-            breakpoint: 481,
-            settings: 'unslick'
-          },
           {
             'breakpoint': 480,
             'settings': {
               'arrows': false,
-              'slidesToShow': 2,
+              'dots': true,
+              'slidesToShow': 1,
               'slidesToScroll': 1
             }
           }
@@ -102,6 +139,9 @@ export default {
     display: flex
     justify-content: space-between
     align-items: center
+
+    &.mobile
+      display: none
 
   &__wrap-mobile
     display: none
@@ -194,15 +234,38 @@ export default {
       background: none
 
   .prices
+    width: 100%
     padding: 30px 18px 50px
     background: #f7f5f9
+    border-radius: 30px
 
     &__wrap
       display: none
 
-    &__item
-      border-radius: 30px
+      &.mobile
+        display: flex
+        padding: 0 13px
+
+        .slick-dots
+          bottom: -40px
+
+          .slick-active
+            button
+              width: 20px
+
+        li
+          margin: 0 4px
+
+          button
+            width: 4px
+
+      .slick-list
+        border-radius: 30px
 
     &__item
+      display: flex !important
       width: 100%
+      height: 100%
+      padding: 20px
+      border-radius: 30px
 </style>

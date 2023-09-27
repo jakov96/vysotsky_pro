@@ -67,8 +67,9 @@ export default {
           {
             'breakpoint': 480,
             'settings': {
-              'arrows': false,
-              'slidesToShow': 2,
+              'arrows': true,
+              'dots': false,
+              'slidesToShow': 1,
               'slidesToScroll': 1
             }
           }
@@ -149,6 +150,10 @@ export default {
       color: rgba(63, 51, 86, 1)
 
 @media (max-width: 480px)
+  .side-width
+    &.blog-wrap
+      padding: 0 18px
+
   .blog
     &__item
       padding: 20px

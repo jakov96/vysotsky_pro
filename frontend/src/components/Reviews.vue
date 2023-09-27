@@ -65,7 +65,18 @@ export default {
         'infinite': true,
         'slidesToShow': 3,
         'slidesToScroll': 1,
-        'variableWidth': true
+        'variableWidth': true,
+        'responsive': [
+          {
+            'breakpoint': 480,
+            'settings': {
+              'arrows': false,
+              'dots': true,
+              'slidesToShow': 1,
+              'slidesToScroll': 1
+            }
+          }
+        ]
       }
     }
   }
@@ -158,4 +169,45 @@ export default {
       height: 24px
       margin-right: 18px
       background: url('../assets/images/download-red.png') no-repeat
+
+@media (max-width: 480px)
+  .reviews
+    padding: 30px 13px 0
+    background: linear-gradient(to bottom, rgba(247, 245, 249, 1) 80%, rgba(255, 255, 255, 1) 5%)
+
+    &__wrap
+      margin: 0
+      text-align: center
+
+    &__author
+      margin: 4px 0 10px
+
+    &__content
+      margin-top: 12px
+      padding: 0
+      text-align: left
+
+      .slick-list
+        margin: 0
+
+        .slick-track
+          width: 100% !important
+
+          .slick-slide
+            width: 90% !important
+            padding: 10px 0
+            margin: 0
+            box-sizing: border-box
+
+    &__item
+      width: 100%
+      padding: 20px
+
+    .slick-arrow
+      &.slick-prev
+        left: calc(50% - 30px) !important
+
+      &.slick-next
+        left: calc(50% + 30px) !important
+
 </style>

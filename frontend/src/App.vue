@@ -1,22 +1,22 @@
 <template>
   <div>
     <Header/>
-    <Description/>
-    <Services/>
-    <Prices/>
-    <RelatedPrices/>
+<!--    <Description/>-->
+<!--    <Services/>-->
+<!--    <Prices/>-->
+<!--    <RelatedPrices/>-->
     <PricesDetail/>
     <WorkFormat/>
     <Results/>
     <ProblemExamples/>
     <Who/>
     <About/>
-    <Teaching/>
+<!--    <Teaching/>-->
     <Podcast/>
     <Reviews/>
     <Questions/>
     <SiteAnalysis/>
-    <Blog/>
+<!--    <Blog/>-->
     <Footer/>
   </div>
 </template>

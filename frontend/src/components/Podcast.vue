@@ -46,4 +46,33 @@ export default {
   &__text
     font-size: 15px
     line-height: 20px
+
+@media (max-width: 480px)
+  .section-3
+    &.podcast
+      flex-direction: column
+      padding: 0
+      background: url('../assets/images/soundtrack-mobile.png') no-repeat left top, url('../assets/images/soundtrack-mobile-2.png') no-repeat right top
+
+  .podcast
+    flex-direction: column
+
+    img
+      width: 160px
+      height: 160px
+
+    &__title
+      margin: 40px 0 20px
+      font-size: 22px
+      line-height: 29px
+
+    &__info
+      width: 100%
+      margin: 0
+
+    &__title
+      padding: 0 13px
+
+    &__text
+      padding: 0 13px
 </style>

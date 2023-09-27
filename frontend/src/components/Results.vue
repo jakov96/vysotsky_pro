@@ -1,5 +1,5 @@
 <template>
-  <section class="section-3">
+  <section class="section-3 results-wrap">
     <div class="results">
       <div class="title-section">Результаты моей работы</div>
       <VueSlickCarousel class="results__wrap" v-bind="settings">
@@ -58,7 +58,18 @@ export default {
         'dots': true,
         'infinite': true,
         'slidesToShow': 4,
-        'slidesToScroll': 2
+        'slidesToScroll': 2,
+        'responsive': [
+          {
+            'breakpoint': 480,
+            'settings': {
+              'arrows': false,
+              'dots': true,
+              'slidesToShow': 1,
+              'slidesToScroll': 1
+            }
+          }
+        ]
       }
     }
   }
@@ -106,4 +117,35 @@ export default {
   &__info
     font-size: 12px
     font-weight: 500
+
+@media (max-width: 480px)
+  .section-3
+    &.results-wrap
+      padding: 0
+
+  .results
+    padding: 30px 0 70px !important
+    background: rgba(247, 245, 249, 1)
+
+    .title-section
+      text-align: center
+
+    .slick-dots
+      bottom: -50px
+
+      li
+        margin: 0 4px
+
+        button
+          width: 4px
+
+      .slick-active
+        button
+          width: 20px
+
+    &__title
+      color: #000
+
+    &__info
+      font-size: 11px
 </style>

@@ -257,4 +257,59 @@ header
     &__info
       font-size: 11px
       line-height: 13px
+
+@media (max-width: 480px)
+  header
+    padding: 10px 13px 50px
+    background: url(/static/img/bg-header.4134925.png) no-repeat top
+    background-size: auto 600px
+    border-radius: 0 0 50px 50px
+
+    nav
+      display: none
+
+    .wrapper
+      flex-direction: column
+
+      &__left
+        width: 100%
+
+        .wrap
+          &__title
+            font-size: 30px
+            line-height: 44px
+
+          &__text
+            display: none
+
+        .consultation
+          margin-top: 35px
+
+          &__example
+            font-size: 10px
+
+          &__buttons
+            display: flex
+            flex-direction: column
+            justify-content: center
+            margin: 25px 0 15px
+
+            .btn
+              font-size: 15px
+
+              &:last-child
+                margin-top: 14px
+
+          &__info
+            font-size: 10px
+
+      .about
+        position: initial
+        width: 100%
+        margin-top: 10px
+        background: white
+
+        img
+          display: none
+
 </style>

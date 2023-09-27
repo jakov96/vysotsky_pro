@@ -89,13 +89,19 @@ export default {
 
     &__header
       flex-direction: column
+      margin-bottom: 30px
 
     &__info
       width: 100%
+      font-size: 14px
 
     &__content
       flex-direction: column
       border: none
+
+    &__description
+      margin-top: 20px
+      font-size: 15px
 
     &__item
       width: 100%
@@ -105,6 +111,9 @@ export default {
       background-size: cover
       border-radius: 45px
       box-sizing: border-box
+
+      &:last-child
+        margin-bottom: 0
 
     &__title
       order: 0

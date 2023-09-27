@@ -164,6 +164,7 @@ export default {
 
     .question-form
       width: 100%
+      margin-top: 20px
       padding: 20px 15px 30px
 
       &__title
