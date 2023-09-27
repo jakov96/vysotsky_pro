@@ -152,15 +152,30 @@ export default {
 @media (max-width: 480px)
   .side-width
     &.blog-wrap
-      padding: 0 18px
+      padding: 0 13px
+      box-sizing: border-box
 
   .blog
     &__item
+      width: 25%
       padding: 20px
 
+    .slick-list
+      width: 100%
+      margin: 0
+
     .slick-slide
-      width: 400px !important
       margin: 0 20px
+      padding: 5px 10px
       box-sizing: border-box
+
+    .slick-arrow
+      top: calc(100% + 40px) !important
+
+      &.slick-prev
+        left: calc(50% - 30px) !important
+
+      &.slick-next
+        left: calc(50% + 30px) !important
 
 </style>

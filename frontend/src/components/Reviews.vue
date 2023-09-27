@@ -6,7 +6,7 @@
         <div>Некоторые отзывы обо мне и моей работе</div>
         <VueSlickCarousel class="reviews__content" v-bind="settings">
           <div class="reviews__item">
-            <span class="reviews__company">ООО «Розсельхоз»</span>
+            <span class="reviews__company">1212»</span>
             <span class="reviews__author">Мария Стародубова</span>
             <div class="reviews__text">Зона ответственности клиента в договоре выше специализации клиента. Обслуживание
               нормальное,
@@ -16,7 +16,7 @@
             <a href="#" class="reviews__download">Смотреть pdf отзыва</a>
           </div>
           <div class="reviews__item">
-            <span class="reviews__company">ООО «Розсельхоз»</span>
+            <span class="reviews__company">О323232»</span>
             <span class="reviews__author">Мария Стародубова</span>
             <div class="reviews__text">Зона ответственности клиента в договоре выше специализации клиента. Обслуживание
               нормальное,
@@ -26,7 +26,7 @@
             <a href="#" class="reviews__download">Смотреть pdf отзыва</a>
           </div>
           <div class="reviews__item">
-            <span class="reviews__company">ООО «Розсельхоз»</span>
+            <span class="reviews__company">ООО 434354оз»</span>
             <span class="reviews__author">Мария Стародубова</span>
             <div class="reviews__text">Зона ответственности клиента в договоре выше специализации клиента. Обслуживание
               нормальное,
@@ -36,7 +36,7 @@
             <a href="#" class="reviews__download">Смотреть pdf отзыва</a>
           </div>
           <div class="reviews__item">
-            <span class="reviews__company">ООО «Розсельхоз»</span>
+            <span class="reviews__company">ООО43455454хоз»</span>
             <span class="reviews__author">Мария Стародубова</span>
             <div class="reviews__text">Зона ответственности клиента в договоре выше специализации клиента. Обслуживание
               нормальное,
@@ -73,7 +73,8 @@ export default {
               'arrows': false,
               'dots': true,
               'slidesToShow': 1,
-              'slidesToScroll': 1
+              'slidesToScroll': 1,
+              'adaptiveHeight': true
             }
           }
         ]

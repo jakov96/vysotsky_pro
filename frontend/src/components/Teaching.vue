@@ -97,14 +97,31 @@ export default {
 
 @media (max-width: 480px)
   .teaching
+    padding: 0 13px
+
+    .title-section
+      font-size: 22px
+
     &__content
+      height: auto
       flex-direction: column
       margin-left: 0
 
     &__info
       width: 100%
+      font-size: 14px
 
     &__photos
       width: 100%
+      margin-top: 20px
+
+      img
+        width: auto
+        height: 185px
+
+      .slick-arrow
+        &.slick-prev,
+        &.slick-next
+          top: calc(100% + 40px) !important
 
 </style>

@@ -11,12 +11,12 @@
     <ProblemExamples/>
     <Who/>
     <About/>
-<!--    <Teaching/>-->
+    <Teaching/>
     <Podcast/>
     <Reviews/>
     <Questions/>
     <SiteAnalysis/>
-<!--    <Blog/>-->
+    <Blog/>
     <Footer/>
   </div>
 </template>
