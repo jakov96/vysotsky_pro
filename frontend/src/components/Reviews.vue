@@ -210,5 +210,4 @@ export default {
 
       &.slick-next
         left: calc(50% + 30px) !important
-
 </style>

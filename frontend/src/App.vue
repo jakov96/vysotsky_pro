@@ -1,10 +1,10 @@
 <template>
   <div>
     <Header/>
-<!--    <Description/>-->
-<!--    <Services/>-->
-<!--    <Prices/>-->
-<!--    <RelatedPrices/>-->
+    <Description/>
+    <Services/>
+    <Prices/>
+    <RelatedPrices/>
     <PricesDetail/>
     <WorkFormat/>
     <Results/>

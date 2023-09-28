@@ -123,5 +123,4 @@ export default {
         &.slick-prev,
         &.slick-next
           top: calc(100% + 40px) !important
-
 </style>

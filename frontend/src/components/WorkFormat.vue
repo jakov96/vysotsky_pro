@@ -121,5 +121,4 @@ export default {
 
     img
       order: 1
-
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section class="section-2">
-    <div class="side-width">
+    <div class="side-width related-prices-wrapper">
       <div class="related-prices">
         <div class="title-section">Цены на сопутствующие услуги</div>
         <div class="related-prices__wrap">
@@ -53,14 +53,64 @@
             </div>
           </div>
         </div>
+        <VueSlickCarousel class="related-prices__wrap mobile" v-bind="settings">
+          <div class="related-prices__item">
+            <span class="prices__title">Разработка сайтов</span>
+            <div class="prices__description">Если нужно быстро понять почему сайт не привлекает трафик.</div>
+            <div class="prices__price">500,000</div>
+            <span class="prices__currency">рублей</span>
+            <div class="prices__info">
+              <ul>
+                <li>РЕЗУЛЬТАТ ЧЕРЕЗ 1-3 ДНЯ</li>
+                <li>ТЕХНИЧЕСКИЙ И КОММЕРЧЕСКИЙ АУДИТ</li>
+                <li>СРАВНЕНИЕ С КОНКУРЕНТАМИ</li>
+              </ul>
+            </div>
+            <button class="btn feedback">ОСТАВИТЬ ЗАЯВКУ</button>
+          </div>
+          <div class="related-prices__item">
+            <span class="prices__title">Настройка рекламы</span>
+            <div class="prices__description">Если нужно быстро понять почему сайт не привлекает трафик.</div>
+            <div class="prices__price">50,000</div>
+            <span class="prices__currency">рублей</span>
+            <div class="prices__info">
+              <ul>
+                <li>РЕЗУЛЬТАТ ЧЕРЕЗ 1-3 ДНЯ</li>
+                <li>ТЕХНИЧЕСКИЙ И КОММЕРЧЕСКИЙ АУДИТ</li>
+                <li>СРАВНЕНИЕ С КОНКУРЕНТАМИ</li>
+              </ul>
+            </div>
+            <button class="btn feedback">ОСТАВИТЬ ЗАЯВКУ</button>
+          </div>
+        </VueSlickCarousel>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
+
 export default {
-  name: 'RelatedPrices'
+  name: 'RelatedPrices',
+  components: { VueSlickCarousel },
+  data () {
+    return {
+      'settings': {
+        'responsive': [
+          {
+            'breakpoint': 480,
+            'settings': {
+              'arrows': false,
+              'dots': true,
+              'slidesToShow': 1,
+              'slidesToScroll': 1
+            }
+          }
+        ]
+      }
+    }
+  }
 }
 </script>
 
@@ -75,6 +125,9 @@ export default {
   &__wrap
     display: flex
     justify-content: space-between
+
+    &.mobile
+      display: none
 
   hr
     display: block
@@ -164,4 +217,72 @@ export default {
       left: 0
       background-image: url('../assets/images/check.png')
       background-repeat: no-repeat
+
+@media (max-width: 480px)
+  .side-width
+    &.related-prices-wrapper
+      padding: 0 13px
+      box-sizing: border-box
+
+  .related-prices
+    width: 100%
+    padding: 30px 0 50px
+    background: #f7f5f9
+    border-radius: 30px
+
+    &__info
+      margin-top: 30px
+
+      ul
+        padding: 0
+
+    &__wrap
+      display: none
+
+      &.mobile
+        display: flex
+        padding: 0 13px
+
+        .slick-dots
+          bottom: -40px
+
+          .slick-active
+            button
+              width: 20px
+
+          li
+            margin: 0 4px
+
+            button
+              width: 4px
+
+      .slick-list
+        border-radius: 30px
+
+    &__item
+      width: 100%
+      height: 480px
+      display: flex !important
+      justify-content: space-between
+      padding: 20px
+      border-radius: 30px
+      box-sizing: border-box
+      text-align: center
+
+      .btn
+        width: 100%
+        margin-top: 35px !important
+        padding: 20px 0 !important
+        border-radius: 30px !important
+        font-size: 15px !important
+
+    &__description
+      margin: 15px 0 10px
+
+    &__price
+      margin: 0
+      font-size: 30px
+
+    &__currency
+      font-size: 10px
 </style>

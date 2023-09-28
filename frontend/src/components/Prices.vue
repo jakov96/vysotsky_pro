@@ -123,7 +123,6 @@ export default {
 </script>
 
 <style lang="sass">
-
 .section-2
   .wrapper
     background: url('../assets/images/bg-section-2-revert.png') no-repeat left center, url('../assets/images/bg-section-2.png') no-repeat right center
@@ -142,9 +141,6 @@ export default {
 
     &.mobile
       display: none
-
-  &__wrap-mobile
-    display: none
 
   .title-section
     text-align: center
@@ -232,12 +228,19 @@ export default {
     .wrapper
       padding: 0 13px
       background: none
+      box-sizing: border-box
 
   .prices
     width: 100%
-    padding: 30px 18px 50px
+    padding: 30px 0 50px
     background: #f7f5f9
     border-radius: 30px
+
+    &__info
+      margin-top: 30px
+
+      ul
+        padding: 0
 
     &__wrap
       display: none
@@ -253,19 +256,38 @@ export default {
             button
               width: 20px
 
-        li
-          margin: 0 4px
+          li
+            margin: 0 4px
 
-          button
-            width: 4px
+            button
+              width: 4px
 
       .slick-list
         border-radius: 30px
 
     &__item
-      display: flex !important
       width: 100%
-      height: 100%
+      height: 480px
+      display: flex !important
+      justify-content: space-between
       padding: 20px
       border-radius: 30px
+      box-sizing: border-box
+      text-align: center
+
+      .btn
+        margin-top: 35px !important
+        padding: 20px 0 !important
+        border-radius: 30px !important
+        font-size: 15px !important
+
+    &__description
+      margin: 15px 0 10px
+
+    &__price
+      margin: 0
+      font-size: 30px
+
+    &__currency
+      font-size: 10px
 </style>

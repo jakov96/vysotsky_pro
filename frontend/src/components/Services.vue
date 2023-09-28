@@ -143,4 +143,7 @@ export default {
 
         ul
           margin: 0
+
+      .btn
+        font-size: 15px
 </style>
