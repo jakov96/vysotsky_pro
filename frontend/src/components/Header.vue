@@ -15,6 +15,25 @@
           </ul>
           <button class="btn call">ЗАКАЗАТЬ ЗВОНОК</button>
         </div>
+        <span class="icon-menu-mobile" v-on:click="toggleMenu"></span>
+        <transition name="fade">
+          <div class="mobile-menu" id="mobile-menu" v-if="show">
+            <div class="mm__bg mm__close"></div>
+            <div class="mm__wrapper" id="mm__wrapper">
+              <div class="mm__header">
+                <span class="close-btn close-btn--red mm__close" v-on:click="toggleMenu"></span>
+                <div class="mm__items">
+                  <ul>
+                    <li class="active"><a href="#">ГЛАВНАЯ</a></li>
+                    <li><a href="#">ЗАКАЗАТЬ SEO</a></li>
+                    <li><a href="#">РАЗРАБОТКА САЙТОВ</a></li>
+                    <li><a href="#">БЛОГ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </transition>
       </nav>
       <div class="wrapper">
         <div class="wrapper__left">
@@ -57,12 +76,60 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  data () {
+    return {
+      show: false
+    }
+  },
+  methods: {
+    toggleMenu: function (event) {
+      event.preventDefault()
+      this.show = !this.show
+    }
+  }
 }
 </script>
 
 <style lang="sass">
 @import '../assets/sass/base'
+
+.fade-enter-active .fade-leave-active
+  transition: all .4s ease-in-out
+
+.fade-enter-from, .fade-leave-to
+  display: none
+  visibility: hidden
+  transform: translateX(-100%)
+
+.close-btn
+  position: relative
+  width: 20px
+  height: 20px
+  -ms-transform: rotate(45deg)
+  transform: rotate(45deg)
+  cursor: pointer
+
+  &:before
+    width: 2px
+    height: 18px
+    left: 8px
+    top: 0
+
+  &:after
+    height: 2px
+    width: 18px
+    top: 8px
+    left: 0
+
+  &:before, &:after
+    content: ""
+    background: #000
+    position: absolute
+
+  &--red:before,
+  &--red:after
+    background: #e65765
 
 header
   background: url("../assets/images/bg-header.png") no-repeat top
@@ -92,6 +159,58 @@ header
         font-size: 14px
         font-weight: 400
         line-height: 18px
+
+    .mobile-menu
+      position: fixed
+      top: 0
+      left: 0
+      height: 100%
+      width: 100%
+      z-index: 100
+
+      .mm__bg
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background: rgba(20, 20, 20, 0.8)
+        z-index: 100
+
+      .mm__wrapper
+        transition: all .4s ease-in-out
+        overflow-y: auto
+        position: relative
+        width: 100%
+        height: 100%
+        z-index: 200
+        touch-action: auto
+        -ms-touch-action: auto
+        background: #fff
+
+        .mm__header
+          .close-btn
+            position: absolute
+            top: 0
+            right: 0
+            margin-right: 15px
+            margin-top: 15px
+
+        .mm__items
+          padding: 20px 13px
+
+          ul
+            margin: 0
+            padding: 0
+            line-height: 35px
+            list-style: none
+
+          ul > li
+            font-size: 16px
+
+            a
+              color: #000
+              text-decoration: none
 
     .menu
       display: flex
@@ -260,16 +379,36 @@ header
 
 @media (max-width: 480px)
   header
-    padding: 10px 13px 50px
+    padding: 0 13px !important
     background: url(/static/img/bg-header.4134925.png) no-repeat top
-    background-size: auto 600px
-    border-radius: 0 0 50px 50px
+    background-size: auto 550px
+
+    .side-width
+      padding: 10px 0 0 !important
 
     nav
-      display: none
+      display: flex
+      justify-content: space-between
+      padding: 20px
+
+      .logo
+        display: flex
+        flex-direction: column
+        .info
+          font-size: 12px
+
+      .icon-menu-mobile
+        display: block
+        width: 35px
+        height: 35px
+        background: url(../assets/images/icon-menu.png) no-repeat
+
+      .menu
+        display: none
 
     .wrapper
       flex-direction: column
+      margin-top: 30px
 
       &__left
         width: 100%
@@ -306,10 +445,21 @@ header
       .about
         position: initial
         width: 100%
-        margin-top: 10px
-        background: white
+        margin-top: 60px
+        background: #fff url("../assets/images/bg-about-mobile.png") no-repeat bottom
+        background-size: contain
 
-        img
-          display: none
+        .about__wrapper
+          padding: 25px
+
+          .name
+            font-size: 24px
+
+          .diploma
+            margin-top: 35px
+
+        .photo
+          width: auto
+          height: 180px
 
 </style>
