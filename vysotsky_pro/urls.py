@@ -19,12 +19,16 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path
+from django.views.generic import TemplateView
 
 from landing.views import FrontendTemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', FrontendTemplateView.as_view(), name='home'),
+    path('robots.txt', TemplateView.as_view(
+        template_name='robots.txt', content_type='text/plain'
+    ), name='robots'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
