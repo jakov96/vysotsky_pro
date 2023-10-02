@@ -151,7 +151,7 @@ export default {
   justify-content: space-between
 
   &.mobile
-    display: none
+    display: none !important
 
   &__item
     display: flex
@@ -194,7 +194,7 @@ export default {
       margin-top: 10px
 
     &.mobile
-      display: flex
+      display: flex !important
       flex-direction: row
       flex-wrap: nowrap
       padding: 0 13px

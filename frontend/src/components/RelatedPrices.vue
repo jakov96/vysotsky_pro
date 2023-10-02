@@ -127,7 +127,7 @@ export default {
     justify-content: space-between
 
     &.mobile
-      display: none
+      display: none !important
 
   hr
     display: block
@@ -240,7 +240,7 @@ export default {
       display: none
 
       &.mobile
-        display: flex
+        display: flex !important
         padding: 0 13px
 
         .slick-dots

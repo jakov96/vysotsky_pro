@@ -140,7 +140,7 @@ export default {
     align-items: center
 
     &.mobile
-      display: none
+      display: none !important
 
   .title-section
     text-align: center
@@ -246,7 +246,7 @@ export default {
       display: none
 
       &.mobile
-        display: flex
+        display: flex !important
         padding: 0 13px
 
         .slick-dots
