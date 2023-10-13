@@ -8,13 +8,13 @@
       </section>
       <section class="modal-body">
         <div class="modal__inputs">
-          <input class="name" placeholder="Имя">
-          <VuePhoneNumberInput class="phone" :translations="translations" v-model="phoneNumber"/>
+          <input v-model="name" class="name" placeholder="Имя">
+          <VuePhoneNumberInput @update="onUpdate" class="phone" :translations="translations" v-model="phoneNumber"/>
         </div>
         <span class="modal__agreement">
           Нажимая на кнопку, вы соглашаетесь на обработку <a target="_blank" class="link" href="#">персональных данных</a>.
         </span>
-        <button class="modal__feedback btn">Заказать звонок</button>
+        <button @click="sendData" class="modal__feedback btn">Заказать звонок</button>
       </section>
       <section class="modal__footer">
         Сомневаешься, заполнять или нет?<br>
@@ -36,7 +36,9 @@ export default {
   },
   data () {
     return {
+      name: null,
       phoneNumber: null,
+      isValidPhone: false,
       translations: {
         phoneNumberLabel: 'Номер телефона',
         example: 'Пример'
@@ -44,8 +46,23 @@ export default {
     }
   },
   methods: {
+    clear () {
+      this.name = this.phoneNumber = null
+    },
     close () {
       this.$emit('close')
+      this.clear()
+    },
+    onUpdate (payload) {
+      this.isValidPhone = payload.isValid
+    },
+    sendData () {
+      if (this.name && this.isValidPhone) {
+        console.log('success')
+        this.close()
+      } else {
+        console.log('error')
+      }
     }
   }
 }
