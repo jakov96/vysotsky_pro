@@ -155,4 +155,35 @@ export default {
       font-size: 15px
       line-height: 20px
       text-align: center
+
+@media (max-width: 480px)
+  .modal-backdrop
+    .modal
+      width: 80%
+      padding: 25px 20px 30px
+
+      &__title
+        margin-bottom: 10px
+        font-size: 20px
+        line-height: 26px
+
+      &__info
+        font-size: 14px
+
+      &__inputs
+        margin: 20px 0 10px
+
+        input
+          font-size: 16px
+
+          &.name
+            margin-bottom: 10px
+
+      &__agreement
+        font-size: 11px
+        line-height: 12px
+
+      &__footer
+        margin-top: 16px
+        font-size: 14px
 </style>
