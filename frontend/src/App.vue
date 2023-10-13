@@ -18,11 +18,16 @@
     <SiteAnalysis/>
     <Blog/>
     <Footer/>
+    <Modal
+      v-show="isModalVisible"
+      @close="closeModal"
+    />
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
+import Modal from './components/Modal'
 import Services from './components/Services'
 import Description from './components/Description'
 import RelatedPrices from './components/RelatedPrices'
@@ -49,6 +54,7 @@ export default {
     Description,
     Footer,
     Header,
+    Modal,
     Podcast,
     Prices,
     PricesDetail,
@@ -62,6 +68,16 @@ export default {
     Questions,
     Who,
     WorkFormat
+  },
+  data () {
+    return {
+      isModalVisible: false
+    }
+  },
+  methods: {
+    closeModal () {
+      this.isModalVisible = false
+    }
   }
 }
 </script>

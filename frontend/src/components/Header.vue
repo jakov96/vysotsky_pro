@@ -13,7 +13,7 @@
             <li><a href="#">РАЗРАБОТКА САЙТОВ</a></li>
             <li><a href="#">БЛОГ</a></li>
           </ul>
-          <button class="btn call">ЗАКАЗАТЬ ЗВОНОК</button>
+          <button @click="showModal" class="btn call">ЗАКАЗАТЬ ЗВОНОК</button>
         </div>
         <span class="icon-menu-mobile" v-on:click="toggleMenu"></span>
         <transition name="fade">
@@ -86,6 +86,9 @@ export default {
     toggleMenu: function (event) {
       event.preventDefault()
       this.show = !this.show
+    },
+    showModal () {
+      this.$parent.isModalVisible = true
     }
   }
 }
