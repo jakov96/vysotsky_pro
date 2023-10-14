@@ -119,11 +119,11 @@ export default {
 
     &.slick-prev
       right: 70px !important
-      background: url('../assets/images/prev-arrow.png') no-repeat center center
+      background: url('../assets/images/prev-arrow.svg') no-repeat center center
 
     &.slick-next
       right: 0 !important
-      background: url('../assets/images/next-arrow.png') no-repeat center center
+      background: url('../assets/images/next-arrow.svg') no-repeat center center
 
   &__description
     display: flex

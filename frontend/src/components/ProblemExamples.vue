@@ -144,12 +144,12 @@ export default {
 
   .slick-prev
     left: 0
-    background: url('../assets/images/prev-arrow.png') no-repeat center center
+    background: url('../assets/images/prev-arrow.svg') no-repeat center center
 
   .slick-next
     left: 30px
     right: initial
-    background: url('../assets/images/next-arrow.png') no-repeat center center
+    background: url('../assets/images/next-arrow.svg') no-repeat center center
 
 @media (max-width: 480px)
   .problem-examples

@@ -13,7 +13,7 @@
             <a href="#" target="_blank" class="head__icon facetime"></a>
           </div>
         </div>
-        <button class="btn">ЗАКАЗАТЬ ЗВОНОК</button>
+        <button @click="showModal" class="btn">ЗАКАЗАТЬ ЗВОНОК</button>
       </div>
     </div>
     <div class="side-width">
@@ -59,7 +59,12 @@
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  methods: {
+    showModal () {
+      this.$parent.isModalVisible = true
+    }
+  }
 }
 </script>
 
@@ -111,13 +116,13 @@ footer
       margin-right: 16px
 
     &.telegram
-      background: url("../assets/images/telegram.png") no-repeat center
+      background: url("../assets/images/telegram.svg") no-repeat center
 
     &.whatsapp
-      background: url("../assets/images/whatsapp.png") no-repeat center
+      background: url("../assets/images/whatsapp.svg") no-repeat center
 
     &.facetime
-      background: url("../assets/images/facetime.png") no-repeat center
+      background: url("../assets/images/facetime.svg") no-repeat center
 
 .bottom
   display: flex

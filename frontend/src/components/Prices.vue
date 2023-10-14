@@ -201,7 +201,7 @@ export default {
       height: 25px
       position: absolute
       left: 0
-      background-image: url('../assets/images/check.png')
+      background-image: url('../assets/images/check.svg')
       background-repeat: no-repeat
 
   .btn

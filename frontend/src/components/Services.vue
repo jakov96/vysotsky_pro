@@ -90,13 +90,13 @@ export default {
       border-radius: 40px
 
       &.promotion
-        background: #ECE9F1 url("../assets/images/promotion.png") no-repeat center
+        background: #ECE9F1 url("../assets/images/promotion.svg") no-repeat center
 
       &.develop
-        background: #ECE9F1 url("../assets/images/develop.png") no-repeat center
+        background: #ECE9F1 url("../assets/images/develop.svg") no-repeat center
 
       &.advertising
-        background: #ECE9F1 url("../assets/images/advertising.png") no-repeat center
+        background: #ECE9F1 url("../assets/images/advertising.svg") no-repeat center
 
     .title
       margin: 30px 0 15px 0

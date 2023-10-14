@@ -82,6 +82,10 @@ export default {
     border-bottom: 1px solid rgba(247, 245, 249, 1)
 
     &.active
+      .questions__question
+        &:after
+          background: url('../assets/images/minus.svg') no-repeat
+
       .questions__answer
         display: block
 
@@ -100,7 +104,7 @@ export default {
       display: block
       width: 24px
       height: 24px
-      background: url('../assets/images/plus.png') no-repeat
+      background: url('../assets/images/plus.svg') no-repeat
 
   &__answer
     display: none

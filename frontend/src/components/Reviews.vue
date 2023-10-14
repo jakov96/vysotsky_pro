@@ -122,11 +122,11 @@ export default {
 
       &.slick-prev
         right: 70px !important
-        background: url('../assets/images/prev-arrow.png') no-repeat center center
+        background: url('../assets/images/prev-arrow.svg') no-repeat center center
 
       &.slick-next
         right: 0 !important
-        background: url('../assets/images/next-arrow.png') no-repeat center center
+        background: url('../assets/images/next-arrow.svg') no-repeat center center
 
   &__item
     width: 28%
@@ -169,7 +169,7 @@ export default {
       width: 24px
       height: 24px
       margin-right: 18px
-      background: url('../assets/images/download-red.png') no-repeat
+      background: url('../assets/images/download-red.svg') no-repeat
 
 @media (max-width: 480px)
   .reviews

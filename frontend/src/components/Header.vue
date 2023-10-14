@@ -334,7 +334,7 @@ header
           height: 25px
           position: absolute
           left: 0
-          background-image: url('../assets/images/check-red.png')
+          background-image: url('../assets/images/check-red.svg')
           background-repeat: no-repeat
 
       .photo
@@ -367,7 +367,7 @@ header
         width: 24px
         height: 24px
         float: left
-        background: url("../assets/images/download.png") no-repeat
+        background: url("../assets/images/download.svg") no-repeat
 
     &__buttons
       margin: 25px 0 25px
@@ -404,7 +404,7 @@ header
         display: block
         width: 35px
         height: 35px
-        background: url(../assets/images/icon-menu.png) no-repeat
+        background: url(../assets/images/icon-menu.svg) no-repeat
 
       .menu
         display: none

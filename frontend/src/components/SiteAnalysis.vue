@@ -105,7 +105,7 @@ export default {
     display: block
     width: 25px
     height: 25px
-    background: url("../assets/images/check-red.png") no-repeat
+    background: url("../assets/images/check-red.svg") no-repeat
 
   &__subtitle
     margin: 18px 0 12px

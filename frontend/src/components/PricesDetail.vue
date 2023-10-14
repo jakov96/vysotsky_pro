@@ -88,7 +88,7 @@ export default {
       height: 25px
       position: absolute
       left: 0
-      background-image: url('../assets/images/check-red.png')
+      background-image: url('../assets/images/check-red.svg')
       background-repeat: no-repeat
 
 @media (max-width: 480px)
