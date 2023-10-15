@@ -8,8 +8,15 @@
       </section>
       <section class="modal-body">
         <div class="modal__inputs">
-          <input v-model="name" class="name" placeholder="Имя">
-          <VuePhoneNumberInput @update="onUpdate" class="phone" :translations="translations" v-model="phoneNumber"/>
+          <input v-model="name" class="name" :class="{error: isNameError}" placeholder="Имя">
+          <VuePhoneNumberInput
+            v-model="phoneNumber"
+            @update="onUpdate"
+            class="phone"
+            :only-countries="['RU']"
+            :translations="translations"
+            :error="isPhoneError"
+          />
         </div>
         <span class="modal__agreement">
           Нажимая на кнопку, вы соглашаетесь на обработку <a target="_blank" class="link" href="#">персональных данных</a>.
@@ -37,6 +44,8 @@ export default {
   data () {
     return {
       name: null,
+      isNameError: false,
+      isPhoneError: false,
       phoneNumber: null,
       isValidPhone: false,
       translations: {
@@ -57,12 +66,42 @@ export default {
       this.isValidPhone = payload.isValid
     },
     sendData () {
+      this.isNameError = Boolean(!this.name)
+      this.isPhoneError = !this.isValidPhone
       if (this.name && this.isValidPhone) {
-        console.log('success')
-        this.close()
-      } else {
-        console.log('error')
+        let data = JSON.stringify({
+          theme: 'Обратный звонок',
+          name: this.name,
+          phone: this.phoneNumber
+        })
+        this.fetchData(data)
       }
+    },
+    fetchData (data) {
+      let url = `/landing/feedback/`
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: data
+
+      })
+        .then((response) => {
+          if (response.ok) {
+            return response.json()
+          }
+          throw new Error('Network response was not ok')
+        })
+        .then((json) => {
+          if (json['success']) {
+            this.close()
+          }
+        })
+        .catch((error) => {
+          console.log(error)
+        })
     }
   }
 }
@@ -136,6 +175,9 @@ export default {
         &.name
           margin-bottom: 20px
           border-radius: 10px
+
+          &.error
+            border: 2px solid #FF4500
 
           &:focus
             border: 2px solid dodgerblue
