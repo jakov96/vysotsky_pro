@@ -46,9 +46,9 @@
           <span class="audit-form__title">Заказать бесплатный аудит</span>
           <span class="audit-form__text">Нужна помощь - заполни заявку.</span>
           <div class="audit-form__data">
-            <input type="text" placeholder="Имя">
-            <input type="tel" placeholder="Телефон">
-            <button class="btn">Заказать бесплатный аудит</button>
+            <input :class="{error: isNameError}" v-model="name" type="text" placeholder="Имя">
+            <input :class="{error: isPhoneError}" v-model="phone" type="tel" placeholder="Телефон">
+            <button @click="sendData" class="btn">Заказать бесплатный аудит</button>
           </div>
           <div class="audit-form__agree">Нажимая на кнопку, вы соглашаетесь на обработку
             <a class="link" href="#" target="_blank">персональных данных</a>.
@@ -61,7 +61,30 @@
 
 <script>
 export default {
-  name: 'SiteAnalysis'
+  name: 'SiteAnalysis',
+  data () {
+    return {
+      name: null,
+      phone: null,
+      isNameError: false,
+      isPhoneError: false
+    }
+  },
+  methods: {
+    sendData () {
+      this.isNameError = Boolean(!this.name)
+      this.isPhoneError = Boolean(!this.phone)
+      if (this.name && this.phone) {
+        let data = JSON.stringify({
+          theme: 'Заказать бесплатный аудит',
+          name: this.name,
+          phone: this.phone
+        })
+        this.$parent.fetchData(data)
+        this.name = this.phone = null
+      }
+    }
+  }
 }
 </script>
 
@@ -184,6 +207,10 @@ export default {
       border: none
       border-radius: 10px
       font-size: 20px
+      outline: none
+
+      &.error
+        border: 2px solid #FF4500
 
       &::placeholder
         color: rgba(208, 201, 214, 1)

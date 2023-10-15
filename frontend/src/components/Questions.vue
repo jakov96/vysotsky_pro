@@ -39,13 +39,13 @@
           <div class="question-form__title">Не нашли ответ на свой вопрос?</div>
           <span class="question-form__text">Оставьте заявку, я перезвоню и отвечу  на все Ваши вопросы</span>
           <div class="question-form__data">
-            <input type="text" placeholder="Имя">
-            <input type="tel" placeholder="+7 (999) 999-99-99">
+            <input :class="{error: isNameError}"  v-model="name" type="text" placeholder="Имя">
+            <input :class="{error: isPhoneError}" v-model="phone" type="tel" placeholder="+7 (999) 999-99-99">
           </div>
           <div class="question-form__agree">Нажимая на кнопку, вы соглашаетесь на обработку
             <a href="#" class="link">персональных данных</a>.
           </div>
-          <button class="btn">Заказать звонок</button>
+          <button @click="sendData" class="btn">Заказать звонок</button>
         </div>
       </div>
     </div>
@@ -55,7 +55,28 @@
 <script>
 export default {
   name: 'Questions',
+  data () {
+    return {
+      name: null,
+      phone: null,
+      isNameError: false,
+      isPhoneError: false
+    }
+  },
   methods: {
+    sendData () {
+      this.isNameError = Boolean(!this.name)
+      this.isPhoneError = Boolean(!this.phone)
+      if (this.name && this.phone) {
+        let data = JSON.stringify({
+          theme: 'Обратный звонок',
+          name: this.name,
+          phone: this.phone
+        })
+        this.$parent.fetchData(data)
+        this.name = this.phone = null
+      }
+    },
     toggleBtn: function (event) {
       let button = event.target.parentElement
       button.classList.toggle('active')
@@ -145,6 +166,9 @@ export default {
       border: none
       border-radius: 10px
       box-sizing: border-box
+
+      &.error
+        border: 2px solid #FF4500
 
       &::placeholder
         color: rgba(208, 201, 214, 1)

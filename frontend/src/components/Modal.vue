@@ -74,34 +74,8 @@ export default {
           name: this.name,
           phone: this.phoneNumber
         })
-        this.fetchData(data)
+        this.$parent.fetchData(data)
       }
-    },
-    fetchData (data) {
-      let url = `/landing/feedback/`
-      fetch(url, {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: data
-
-      })
-        .then((response) => {
-          if (response.ok) {
-            return response.json()
-          }
-          throw new Error('Network response was not ok')
-        })
-        .then((json) => {
-          if (json['success']) {
-            this.close()
-          }
-        })
-        .catch((error) => {
-          console.log(error)
-        })
     }
   }
 }
