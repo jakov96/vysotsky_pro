@@ -1,50 +1,50 @@
 <template>
   <section class="section-5">
-    <div class="side-width blog-wrap">
-      <div class="title-section">Последние статьи из блога</div>
-      <VueSlickCarousel class="blog" v-bind="settings">
-        <div class="blog__item">
-          <img src="../assets/images/blog-photo.png" alt="">
-          <div class="blog__description">
-            <span class="blog__date">13 июня 2021</span>
-            <span class="blog__title">Что такое Title и зачем нужен для SEO?</span>
-          </div>
-          <a href="#">
-            <button class="btn">ЧИТАТЬ</button>
-          </a>
-        </div>
-        <div class="blog__item">
-          <img src="../assets/images/blog-photo.png" alt="">
-          <div class="blog__description">
-            <span class="blog__date">13 июня 2021</span>
-            <span class="blog__title">Что такое Title и зачем нужен для SEO?</span>
-          </div>
-          <a href="#">
-            <button class="btn">ЧИТАТЬ</button>
-          </a>
-        </div>
-        <div class="blog__item">
-          <img src="../assets/images/blog-photo.png" alt="">
-          <div class="blog__description">
-            <span class="blog__date">13 июня 2021</span>
-            <span class="blog__title">Что такое Title и зачем нужен для SEO?</span>
-          </div>
-          <a href="#">
-            <button class="btn">ЧИТАТЬ</button>
-          </a>
-        </div>
-        <div class="blog__item">
-          <img src="../assets/images/blog-photo.png" alt="">
-          <div class="blog__description">
-            <span class="blog__date">13 июня 2021</span>
-            <span class="blog__title">Что такое Title и зачем нужен для SEO?</span>
-          </div>
-          <a href="#">
-            <button class="btn">ЧИТАТЬ</button>
-          </a>
-        </div>
-      </VueSlickCarousel>
-    </div>
+<!--    <div class="side-width blog-wrap">-->
+<!--      <div class="title-section">Последние статьи из блога</div>-->
+<!--      <VueSlickCarousel class="blog" v-bind="settings">-->
+<!--        <div class="blog__item">-->
+<!--          <img src="../assets/images/blog-photo.png" alt="">-->
+<!--          <div class="blog__description">-->
+<!--            <span class="blog__date">13 июня 2021</span>-->
+<!--            <span class="blog__title">Что такое Title и зачем нужен для SEO?</span>-->
+<!--          </div>-->
+<!--          <a href="#">-->
+<!--            <button class="btn">ЧИТАТЬ</button>-->
+<!--          </a>-->
+<!--        </div>-->
+<!--        <div class="blog__item">-->
+<!--          <img src="../assets/images/blog-photo.png" alt="">-->
+<!--          <div class="blog__description">-->
+<!--            <span class="blog__date">13 июня 2021</span>-->
+<!--            <span class="blog__title">Что такое Title и зачем нужен для SEO?</span>-->
+<!--          </div>-->
+<!--          <a href="#">-->
+<!--            <button class="btn">ЧИТАТЬ</button>-->
+<!--          </a>-->
+<!--        </div>-->
+<!--        <div class="blog__item">-->
+<!--          <img src="../assets/images/blog-photo.png" alt="">-->
+<!--          <div class="blog__description">-->
+<!--            <span class="blog__date">13 июня 2021</span>-->
+<!--            <span class="blog__title">Что такое Title и зачем нужен для SEO?</span>-->
+<!--          </div>-->
+<!--          <a href="#">-->
+<!--            <button class="btn">ЧИТАТЬ</button>-->
+<!--          </a>-->
+<!--        </div>-->
+<!--        <div class="blog__item">-->
+<!--          <img src="../assets/images/blog-photo.png" alt="">-->
+<!--          <div class="blog__description">-->
+<!--            <span class="blog__date">13 июня 2021</span>-->
+<!--            <span class="blog__title">Что такое Title и зачем нужен для SEO?</span>-->
+<!--          </div>-->
+<!--          <a href="#">-->
+<!--            <button class="btn">ЧИТАТЬ</button>-->
+<!--          </a>-->
+<!--        </div>-->
+<!--      </VueSlickCarousel>-->
+<!--    </div>-->
   </section>
 </template>
 

@@ -163,9 +163,10 @@ export default {
       height: 60px
       padding: 18px
       font-size: 20px
-      border: none
+      border: 1px solid #d0c9d6
       border-radius: 10px
       box-sizing: border-box
+      outline: none
 
       &.error
         border: 2px solid #FF4500

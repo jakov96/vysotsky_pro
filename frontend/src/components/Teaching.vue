@@ -14,7 +14,6 @@
           <img src="../assets/images/card-1.png" alt="">
           <img src="../assets/images/card-2.png" alt="">
           <img src="../assets/images/card-3.png" alt="">
-          <img src="../assets/images/card-4.png" alt="">
         </VueSlickCarousel>
       </div>
     </div>
@@ -76,6 +75,9 @@ export default {
 
     .slick-slide
       margin: 0 20px
+
+      img
+        object-fit: cover
 
     .slick-arrow
       width: 30px

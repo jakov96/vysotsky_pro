@@ -1,6 +1,6 @@
 <template>
   <section class="section-2">
-    <div class="site-analysis">
+    <div class="site-analysis" id="site-analysis">
       <div class="side-width">
         <div class="site-analysis__wrap">
           <div class="site-analysis__description">

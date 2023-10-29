@@ -2,7 +2,7 @@
   <section class="section-3 podcast">
     <div class="side-width">
       <div class="podcast">
-        <a href="https://music.yandex.ru" target="_blank"><img src="../assets/images/play.png" alt="Play"></a>
+        <a href="https://music.yandex.ru/album/23305928/track/107558099" target="_blank"><img src="../assets/images/play.png" alt="Play"></a>
         <div class="podcast__info">
           <div class="podcast__title">Рассказываю о SEO на подкасте «Профориентация» в Yandex Music</div>
           <span class="podcast__text">Был приглашен на подкаст о маркетинге как эксперт в области SEO.

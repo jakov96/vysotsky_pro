@@ -170,6 +170,14 @@ export default {
       margin-right: 18px
       background: url('../assets/images/download-red.svg') no-repeat
 
+@media (min-width: 1200px) and (max-width: 2210px)
+  .reviews
+    background: url('../assets/images/bg-section-7.png') no-repeat, linear-gradient(to bottom, rgba(247, 245, 249, 1) 75%, rgba(255, 255, 255, 1) 5%)
+
+    &__content
+      .slick-arrow
+        top: 58% !important
+
 @media (max-width: 480px)
   .reviews
     padding: 30px 13px 0

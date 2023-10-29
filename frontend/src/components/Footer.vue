@@ -33,7 +33,7 @@
             <span class="bottom__menu-title">Услуги SEO</span>
             <a href="#" class="bottom__menu-item">SEO аудит сайта</a>
             <a href="#" class="bottom__menu-item">SEO продвижение</a>
-            <a href="#" class="bottom__menu-item">Контент маркетинг</a>
+<!--            <a href="#" class="bottom__menu-item">Контент маркетинг</a>-->
             <a href="#" class="bottom__menu-item">Поисковый маркетинг</a>
             <a href="#" class="bottom__menu-item">Подготовка нового сайта к SEO</a>
           </div>
@@ -43,10 +43,10 @@
             <a href="#" class="bottom__menu-item">Создание сайта услуг</a>
             <a href="#" class="bottom__menu-item">Создание интернет-магазина</a>
           </div>
-          <div class="bottom__menu">
-            <span class="bottom__menu-title">Обучение</span>
-            <span href="#" class="bottom__menu-title">Блог</span>
-          </div>
+<!--          <div class="bottom__menu">-->
+<!--            <span class="bottom__menu-title">Обучение</span>-->
+<!--            <span href="#" class="bottom__menu-title">Блог</span>-->
+<!--          </div>-->
         </div>
       </div>
       <div class="copyright">

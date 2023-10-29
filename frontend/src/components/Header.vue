@@ -10,8 +10,7 @@
           <ul>
             <li class="active"><a href="#">ГЛАВНАЯ</a></li>
             <li><a href="#">ЗАКАЗАТЬ SEO</a></li>
-            <li><a href="#">РАЗРАБОТКА САЙТОВ</a></li>
-            <li><a href="#">БЛОГ</a></li>
+            <li><a href="#">РАЗРАБОТКА SEO САЙТОВ</a></li>
           </ul>
           <button @click="showModal" class="btn call">ЗАКАЗАТЬ ЗВОНОК</button>
         </div>
@@ -46,7 +45,7 @@
             <div class="consultation__example"><a href="#">Скачать пример договора</a></div>
             <div class="consultation__buttons">
               <button class="btn free-project">ОБСУДИТЬ ПРОЕКТ</button>
-              <button class="btn purple">БЕСПЛАТНЫЙ АУДИТ</button>
+              <a href="#site-analysis" class="btn purple">БЕСПЛАТНЫЙ АУДИТ</a>
             </div>
             <div class="consultation__info">Оптимизирую сайты сам, без перепродажи третьим лицам, из-за этого очень
               ограничен в количестве проектов на ведении и очень избирательно беру новые сайты на продвижение.
@@ -64,7 +63,7 @@
             </ul>
             <div class="diploma">
               <img src="../assets/images/diplom.png" alt="Сертификат маркетолога">
-              <p class="diploma__link"><a href="#" target="_blank">СЕРТИФИКАТ МАРКЕТОЛОГА</a></p>
+              <p class="diploma__link"><a href="../../static/diploma.pdf" target="_blank">СЕРТИФИКАТ МАРКЕТОЛОГА</a></p>
             </div>
           </div>
           <img class="photo" src="../assets/images/photo.png" alt="Фото">
@@ -373,6 +372,9 @@ header
       margin: 25px 0 25px
 
       .btn
+        text-decoration: none
+        font-size: 14px
+
         &.purple
           background: rgba(63, 51, 86, 1)
 
