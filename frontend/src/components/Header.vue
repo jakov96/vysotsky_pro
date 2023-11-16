@@ -62,7 +62,7 @@
               <li>Обучаю SEO в онлайн-школе GeekBrains</li>
             </ul>
             <div class="diploma">
-              <img src="../assets/images/diplom.png" alt="Сертификат маркетолога">
+              <a href="../../static/diploma.pdf" target="_blank"><img src="../assets/images/diplom.png" alt="Сертификат маркетолога"></a>
               <p class="diploma__link"><a href="../../static/diploma.pdf" target="_blank">СЕРТИФИКАТ МАРКЕТОЛОГА</a></p>
             </div>
           </div>
@@ -299,6 +299,7 @@ header
 
         .diploma
           margin-top: 55px
+          z-index: 1
 
           &__link
             width: max-content
@@ -307,6 +308,8 @@ header
             border-bottom: 1px dashed rgba(63, 51, 86, 1)
 
             a
+              display: block
+              width: 100%
               text-decoration: none
 
         ul
