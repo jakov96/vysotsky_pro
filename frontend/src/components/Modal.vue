@@ -74,6 +74,7 @@ export default {
           name: this.name,
           phone: this.phoneNumber
         })
+        this.close()
         this.$parent.fetchData(data)
       }
     }

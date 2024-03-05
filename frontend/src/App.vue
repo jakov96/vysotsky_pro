@@ -97,7 +97,7 @@ export default {
         })
         .then((json) => {
           if (json['success']) {
-            this.close()
+            this.closeModal()
           }
         })
         .catch((error) => {
